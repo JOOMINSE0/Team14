@@ -9,7 +9,7 @@ function Nav() {
                 <Link to="/suggest" className="nav-link">추천</Link>
             </button>
             <button className="nav-button home">
-                <Link to="/" className="nav-link">홈화면</Link>
+                <Link to="/main" className="nav-link">홈화면</Link>
             </button>
             <button className="nav-button game">
                 <Link to="/maingamepage" className="nav-link">게임</Link>

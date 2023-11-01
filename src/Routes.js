@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
 import Splash from "./pages/Splash/Splash"
 import ChoosePosition from "./pages/ChoosePosition/ChoosePosition"
 import WritePatientName from "./pages/WritePatientName/WritePatientName"
@@ -24,14 +24,15 @@ import MyPage from "./pages/MyPage/MyPage"
 
 
 export default class AppRoutes extends React.Component {
+
     render() {
         return (
             <Router>
                 <Routes>
-                    <Route path="/splash" element={<Splash />} />
+                    <Route path="/" element={<Splash />} />
                     <Route path="/chooseposition" element={<ChoosePosition />} />
                     <Route path="/writepatientname" element={<WritePatientName />} />
-                    <Route path="/" element={<Main />} />
+                    <Route path="/main" element={<Main />} />
                     <Route path="/suggest" element={<Suggest />} />
                     <Route path="/maingamepage" element={<MainGamePage />} />
                     <Route path="/chimaeyebang" element={<ChimaeYebang />} />

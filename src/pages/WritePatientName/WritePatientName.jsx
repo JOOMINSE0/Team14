@@ -1,19 +1,42 @@
 import React from "react";
-import Nav from "../../component/Nav/Nav";
-import Header from "../../component/Header/Header";
+import { useState } from 'react';
+import './WritePatientName.scss';
+import { useNavigate } from 'react-router-dom';
 
 //화면 Main(메인화면) 컴포넌트를 만든다
-const Main = () => {
+const WritePatientName = () => {
+
+    const [inputText, setInputText] = useState(''); // 초기값 설정
+    const navigate = useNavigate(); // useNavigate 훅을 사용
+
+    const handleInputChange = (e) => {
+        setInputText(e.target.value);
+    };
+
+    const handleCompleteButtonClick = () => {
+        // 입력 완료 버튼 클릭 시 main 화면으로 이동
+        navigate('/main');
+    };
+
 
     return (
-        <div>
-            <Header />
-            <div className="content">
-                <p>여기는 환자의 이름을 고르는 페이지입니다. ChoosePosition 화면 이후 등장합니다.</p>
+        <div className="write-patient-text">
+            <div>
+                <h1>치매 환자분의 성함을 작성해주세요.</h1>
             </div>
-            <Nav />
+            <div>
+                <input
+                    type="text"
+                    value={inputText}
+                    onChange={handleInputChange}
+                />
+                <p>입력된 환자분의 성함: {inputText}</p>
+            </div>
+            <button className="write-text-button" onClick={handleCompleteButtonClick}>
+                입력 완료
+            </button>
         </div>
     );
 };
 
-export default Main;
+export default WritePatientName;

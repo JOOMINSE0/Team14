@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
 
-//화면 Main(메인화면) 컴포넌트를 만든다
-const Main = () => {
+function Splash() {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        // 3초 후 메인 화면으로 전환
+        const timeout = setTimeout(() => {
+            navigate('/chooseposition'); // '/' 경로로 메인 화면으로 이동
+        }, 3000);
+
+        return () => clearTimeout(timeout);
+    }, [navigate]);
 
     return (
-        <div>
-            <p>여기는 실핼 시 가장 먼저 보이는 스플래쉬 화면입니다. 3초 보이고 나서 다음 화면으로 전환됩니다.</p>
-
+        <div className="splash-text">
+            <h1>REMEMBER</h1>
+            <p>우리 가족을 기억해</p>
+            <p>소중한 나를 기억해</p>
         </div>
     );
-};
+}
 
-export default Main;
+export default Splash;
