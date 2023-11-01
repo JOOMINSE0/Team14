@@ -1,0 +1,36 @@
+.navigation-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #DE98FF;
+    /* 연보라색 */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .nav-button {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 16px;
+        cursor: pointer; //마우스 커서를 손가락 모양으로 변경!
+
+        &.recommended {
+            /* 스타일 필요 시 여기에 추가 */
+        }
+
+        &.home {
+            /* 스타일 필요 시 여기에 추가 */
+        }
+
+        &.game {
+            /* 스타일 필요 시 여기에 추가 */
+        }
+    }
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}

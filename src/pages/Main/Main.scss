@@ -1,0 +1,25 @@
+.mypage-button {
+    position: fixed;
+    //top: 0;
+    right: 0;
+    /* 화면 우측에 배치 */
+    width: 150px;
+    height: 30px;
+    background-color: #DE98FF;
+    display: flex;
+    justify-content: center;
+    /* 가로 중앙 정렬 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.mypage-link {
+    text-decoration: none;
+    color: white;
+}

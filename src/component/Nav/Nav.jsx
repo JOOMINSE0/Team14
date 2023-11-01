@@ -1,47 +1,19 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import "./Nav.scss";
+import React from 'react';
+import './Nav.scss';
+import { Link } from 'react-router-dom';
 
 function Nav() {
-    // const navigate = useNavigate(); // useNavigate를 사용해서 navigate 객체를 가져온다.
-
-    // const handleButtonClick = (path) => {
-    //     navigate(path); // navigate 함수를 사용해서 경로를 변경
-    // };
-
     return (
-        <div>
-            <div className="Nav">
-                <button
-                    className="childNav"
-                    onClick={() => console.log('left_clicked!')}
-                    style={{ justifyContent: "start", paddingLeft: "20px" }}
-                >
-
-                    <div className="SizedBox" style={{ width: "10px" }}></div>
-                    <span>홈화면</span>
-                </button>
-
-                <button
-                    className="childNav"
-                    onClick={() => console.log('right_clicked!')}
-                    style={{ justifyContent: "end", paddingRight: "20px" }}
-                >
-                    <span>제안</span>
-                    <div className="SizedBox" style={{ width: "10px" }}></div>
-
-                </button>
-            </div>
-            <button
-                className="nav-button-style"
-                onClick={() => console.log('middle_clicked!')}
-                style={{ fontSize: 20, color: "red" }}
-            >
+        <div className="navigation-bar">
+            <button className="nav-button recommended">
+                <Link to="/suggest" className="nav-link">추천</Link>
             </button>
-            <div className="AR">
-                <a className="h2">게임</a>
-            </div>
-
+            <button className="nav-button home">
+                <Link to="/" className="nav-link">홈화면</Link>
+            </button>
+            <button className="nav-button game">
+                <Link to="maingamepage" className="nav-link">게임</Link>
+            </button>
         </div>
     );
 }
