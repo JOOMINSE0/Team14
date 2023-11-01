@@ -16,7 +16,11 @@ function Header() {
             <button className="header-button" onClick={goBack}>
                 <FaArrowLeft /> 뒤로가기
             </button>
-            <h2 className="header-link">리멤버: 잊지 말아요</h2>
+
+            <button className="header-button">
+                <Link to="/main" className="mypage-link">리멤버: 잊지 말아요</Link>
+            </button>
+
             <div>
                 <button className="header-button">
                     <Link to="/mypage" className="mypage-link">마이페이지</Link>
