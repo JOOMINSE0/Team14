@@ -36,6 +36,7 @@ const WritePatientName = () => {
             </div>
             <div>
                 <input
+                    className="patient-input"
                     type="text"
                     value={inputText_1}
                     onChange={handleInputChange_1}
