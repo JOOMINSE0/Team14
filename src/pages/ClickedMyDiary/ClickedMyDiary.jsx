@@ -18,6 +18,8 @@ const ClickedMyDiary = () => {
             <Header />
             <div className="content clicked-my-diary-column">
                 <p>여기는 개인일기장, 즉 보호자 or 환자의 일기장을 클릭했을 때 보여주는 페이지입니다.</p>
+                <div className="my-diary-pop"></div>
+                <div className="sizedbox"></div>
                 <button className="clicked-my-diary-button" onClick={handleCompleteButtonClick}>
                     나의 일기장 목록으로 돌아가기
                 </button>

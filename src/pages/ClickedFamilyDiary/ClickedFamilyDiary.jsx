@@ -18,6 +18,8 @@ const ChooseFamilyDiary = () => {
             <Header />
             <div className="content clicked-family-diary-column">
                 <p>여기는 가족일기장의 일기 하나를 클릭했을 때 보여주는 페이지입니다.</p>
+                <div className="sizedbox"></div>
+                <div className="family-diary-pop"></div>
                 <button className="clicked-family-diary-button" onClick={handleCompleteButtonClick}>
                     우리 가족 일기장 목록으로 돌아가기
                 </button>
