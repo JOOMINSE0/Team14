@@ -1,17 +1,34 @@
 import React from "react";
+import Nav from "../../component/Nav/Nav";
 import Header from "../../component/Header/Header";
+import './DeleteAccount.scss';
+import { useNavigate } from 'react-router-dom';
 
 //화면 Main(메인화면) 컴포넌트를 만든다
-const DeleteAccount = () => {
+const Logout = () => {
+    const navigate = useNavigate(); // useNavigate 훅을 사용
+
+    const handleCompleteButtonClick = () => {
+        alert('성공적으로 회원 탈퇴 되었습니다!');
+        // 입력 완료 버튼 클릭 시 main 화면으로 이동
+        navigate('/main');
+    };
 
     return (
         <div>
             <Header />
-            <div className="content">
-                <p>여기는 회원탈퇴 페이지입니다.</p>
+            <div className="content delete-column">
+                <h2>정말 회원 탈퇴 하시겠어요?</h2>
+                <h2>회원 탈퇴를 하면 가족 일기장을 사용할 수 없어요.</h2>
+                <h2>가족 일기장을 사용하시려면 다시 회원 가입을 해주세요.</h2>
+                <div className="sizedbox"></div>
+                <button className="delete-button" onClick={handleCompleteButtonClick}>
+                    회원 탈퇴 하기
+                </button>
             </div>
+            <Nav />
         </div>
     );
 };
 
-export default DeleteAccount;
+export default Logout;
