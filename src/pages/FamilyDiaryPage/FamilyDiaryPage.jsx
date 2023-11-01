@@ -14,6 +14,10 @@ const FamiliDiaryPage = () => {
         // '+ 버튼' 클릭 시 '/writefamilydiary' 페이지로 이동
         navigate('/writefamilydiary');
     };
+    const handleWriteFamilyDiaryClick_invite = () => {
+        navigate('/invitebyid');
+    };
+
 
     return (
         <div>
@@ -32,6 +36,12 @@ const FamiliDiaryPage = () => {
             </div>
             <button className="fixed-button" onClick={handleWriteFamilyDiaryClick}>
                 <span>+</span>
+            </button>
+            <button className="invite-button" onClick={handleWriteFamilyDiaryClick_invite}>
+                <span>
+                    <p>가족</p>
+                    <p>초대</p>
+                </span>
             </button>
             <Nav />
         </div>
