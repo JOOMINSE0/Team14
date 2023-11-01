@@ -20,6 +20,7 @@ const Login = () => {
     };
 
     const handleCompleteButtonClick = () => {
+        alert('성공적으로 로그인되었습니다!');
         // 입력 완료 버튼 클릭 시 main 화면으로 이동
         navigate('/main');
     };
