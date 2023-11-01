@@ -2,3 +2,18 @@
     margin-top: 70px;
     /* 헤더의 높이만큼 추가 */
 }
+
+.custom-div {
+    width: 100vh;
+    height: 100px;
+    border: 2px solid #DE98FF;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.suggest-column {
+    display: flex;
+    align-items: center; // 수직 방향 중앙 정렬
+    justify-content: flex-start; // 수평 방향 시작 정렬
+    flex-direction: column;
+}
