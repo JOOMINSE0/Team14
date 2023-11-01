@@ -2,11 +2,18 @@ import React from "react";
 import Nav from "../../component/Nav/Nav";
 import Header from "../../component/Header/Header";
 import './MyDiaryPage.scss';
+import { useNavigate } from 'react-router-dom';
 
 //화면 Main(메인화면) 컴포넌트를 만든다
 const MyDiaryPage = () => {
     const divCount = 13; // 생성할 div의 개수
     const divs = Array.from({ length: divCount }, (_, index) => index);
+
+    const navigate = useNavigate(); // useNavigate 훅을 사용
+    const handleWriteMyDiaryClick = () => {
+        // '+ 버튼' 클릭 시 '/writefamilydiary' 페이지로 이동
+        navigate('/writemydiary');
+    };
 
     return (
         <div>
@@ -23,7 +30,7 @@ const MyDiaryPage = () => {
                     ))}
                 </div>
             </div>
-            <button className="fixed-button">
+            <button className="fixed-button" onClick={handleWriteMyDiaryClick}>
                 <span>+</span>
             </button>
             <Nav />
