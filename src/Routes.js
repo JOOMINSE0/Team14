@@ -21,6 +21,9 @@ import WriteMyDiary from "./pages/WriteMyDiary/WriteMyDiary"
 import ClickedFamilyDiary from "./pages/ClickedFamilyDiary/ClickedFamilyDiary"
 import ClickedMyDiary from "./pages/ClickedMyDiary/ClickedMyDiary"
 import MyPage from "./pages/MyPage/MyPage"
+import ChangeCharacter from "./pages/ChangeCharacter/ChangeCharacter"
+import WhatisChimae from "./pages/WhatisChimae/WhatisChimae"
+import AllStepChimae from "./pages/AllStepChimae/AllStepChimae"
 
 
 export default class AppRoutes extends React.Component {
@@ -50,6 +53,9 @@ export default class AppRoutes extends React.Component {
                     <Route path="/clickedfamilydiary" element={<ClickedFamilyDiary />} />
                     <Route path="/clickedmydiary" element={<ClickedMyDiary />} />
                     <Route path="/mypage" element={<MyPage />} />
+                    <Route path="/changecharacter" element={<ChangeCharacter />} />
+                    <Route path="/whatischimae" element={<WhatisChimae />} />
+                    <Route path="/allstepchimae" element={<AllStepChimae />} />
                 </Routes>
             </Router>
         );

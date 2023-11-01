@@ -12,15 +12,15 @@ const Main = () => {
     const navigate = useNavigate(); // useNavigate 훅을 사용
     const handleCompleteButtonClick_character = () => {
         // 입력 완료 버튼 클릭 시 main 화면으로 이동
-        navigate('/main'); //페이지 만들어야함(캐릭터 바꾸는 페이지)
+        navigate('/changecharacter');
     };
     const handleCompleteButtonClick_whatischimae = () => {
         // 입력 완료 버튼 클릭 시 main 화면으로 이동
-        navigate('/main'); //페이지 만들어야함(캐릭터 바꾸는 페이지)
+        navigate('/whatischimae');
     };
     const handleCompleteButtonClick_allthing = () => {
         // 입력 완료 버튼 클릭 시 main 화면으로 이동
-        navigate('/main'); //페이지 만들어야함(캐릭터 바꾸는 페이지)
+        navigate('/allstepchimae');
     };
 
     return (
