@@ -12,7 +12,7 @@ function Nav() {
                 <Link to="/" className="nav-link">홈화면</Link>
             </button>
             <button className="nav-button game">
-                <Link to="maingamepage" className="nav-link">게임</Link>
+                <Link to="/maingamepage" className="nav-link">게임</Link>
             </button>
         </div>
     );

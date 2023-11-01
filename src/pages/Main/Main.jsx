@@ -10,7 +10,9 @@ const Main = () => {
     return (
         <div>
             <Header />
-            <p>여기는 홈화면입니다. 사람 이모티콘, 응원 멘트 네비바 등등...</p>
+            <div className="content">
+                <p>여기는 홈화면입니다. 사람 이모티콘, 응원 멘트 네비바 등등...</p>
+            </div>
             <Nav />
         </div>
     );
