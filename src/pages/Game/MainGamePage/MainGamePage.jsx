@@ -28,8 +28,8 @@ const MainGamePage = () => {
             <Header />
             <div className="main-game-page-text-column content">
 
-                <h1>즐거운 게임과 함께,</h1>
-                <h1>치매를 예방하고, 진단하고, 치료해요!</h1>
+                <h2>즐거운 게임과 함께,</h2>
+                <h2>치매를 예방하고, 진단하고, 치료해요!</h2>
                 <div>
                     <button
                         className={`main-game-page-button ${selected === 0 ? 'selected' : ''}`}
