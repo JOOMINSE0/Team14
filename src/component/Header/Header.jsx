@@ -20,13 +20,9 @@ function Header() {
             <button className="header-button">
                 <Link to="/main" className="mypage-link">리멤버: 잊지 말아요</Link>
             </button>
-
-            <div>
-                <button className="header-button">
-                    <Link to="/mypage" className="mypage-link">마이페이지</Link>
-                </button>
-                <div className="sizedbox"></div>
-            </div>
+            <button className="header-button">
+                <Link to="/mypage" className="mypage-link">마이페이지</Link>
+            </button>
         </div>
     );
 }

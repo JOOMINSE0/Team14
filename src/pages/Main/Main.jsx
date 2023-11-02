@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import Nav from "../../component/Nav/Nav";
 import Header from "../../component/Header/Header";
 import { Link } from 'react-router-dom';
@@ -6,10 +7,14 @@ import './Main.scss';
 import people from '../../assets/people.svg';
 import balloon from '../../assets/talkballoon.svg';
 import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 //화면 Main(메인화면) 컴포넌트를 만든다
 const Main = () => {
     const navigate = useNavigate(); // useNavigate 훅을 사용
+    const location = useLocation();
+    const selectedImage = location.state ? (location.state.selectedImage || people) : people;
+
     const handleCompleteButtonClick_character = () => {
         // 입력 완료 버튼 클릭 시 main 화면으로 이동
         navigate('/changecharacter');
@@ -35,7 +40,7 @@ const Main = () => {
 
                     <div className="image-container main-row">
                         <div className="main-column">
-                            <img src={people} alt="이미지" className="image-overlay-people" />
+                            <img src={selectedImage} alt="이미지" className="image-overlay-people" />
                             <button className="character-button" onClick={handleCompleteButtonClick_character}>
                                 캐릭터 바꾸기
                             </button>
