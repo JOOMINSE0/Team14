@@ -9,6 +9,9 @@ import MainGamePage from "./pages/Game/MainGamePage/MainGamePage";
 import ChimaeYebang from "./pages/Game/ChimaeYebang/ChimaeYebang";
 import ChimaeJindan from "./pages/Game/ChimaeJindan/ChimaeJindan";
 import ChimaeChiryo from "./pages/Game/ChimaeChiryo/ChimaeChiryo";
+import YouAreOk from "./pages/Game/YouAreOk/YouAreOk";
+import WatchOut from "./pages/Game/WatchOut/WatchOut";
+import YouAreDanger from "./pages/Game/YouAreDanger/YouAreDanger";
 import Login from "./pages/Login/Login";
 import LogOut from "./pages/LogOut/LogOut"
 import SignUp from "./pages/Signup/Signup"
@@ -58,6 +61,9 @@ export default class AppRoutes extends React.Component {
                     <Route path="/whatischimae" element={<WhatisChimae />} />
                     <Route path="/allstepchimae" element={<AllStepChimae />} />
                     <Route path="/familyguide" element={<FamilyGuide />} />
+                    <Route path="/youareok" element={<YouAreOk />} />
+                    <Route path="/watchout" element={<WatchOut />} />
+                    <Route path="/youaredanger" element={<YouAreDanger />} />
                 </Routes>
             </Router>
         );

@@ -68,7 +68,7 @@ const Main = () => {
                     </button>
                     <div className="sizedbox"></div>
                     <button className="chimae-button" onClick={handleCompleteButtonClick_forfamily}>
-                        치매 환자의 가족을 위한 가이드 보기
+                        치매 환자 가족을 위한 가이드 보기
                     </button>
                     <div className="main-row">
                         <h2>홍길동</h2>
