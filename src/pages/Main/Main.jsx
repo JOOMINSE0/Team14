@@ -48,8 +48,7 @@ const Main = () => {
                         <div>
                             <img src={balloon} alt="이미지" className="image-overlay-balloon" />
 
-                            <div className="text-overlay">동트기 전이 가장 어두운 거래. 오늘도 파이팅!</div>
-
+                            <div className="text-overlay">동트기 전이 가장 어두운 거래. 항상 고맙고 사랑해!</div>
                         </div>
                     </div>
                     <div>

@@ -131,7 +131,7 @@
 }
 
 .text-overlay {
-    width: 120px;
+    width: 130px;
     position: absolute;
     /* 절대 위치로 설정 */
     top: 0;
@@ -150,4 +150,5 @@
     align-items: center; // 수직 방향 중앙 정렬
     justify-content: flex-start; // 수평 방향 시작 정렬
     flex-direction: column;
+    word-wrap: break-word;
 }
