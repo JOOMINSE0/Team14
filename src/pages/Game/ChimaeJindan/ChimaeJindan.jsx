@@ -24,8 +24,10 @@ const ChimaeJindan = () => {
     };
 
     return (
-        <div>
+        <div className="content jindan-column">
             <Header />
+            <h2>해당하는 항목에 체크해보세요.</h2>
+            <h2>최근 3개월 간 있었던 증상을 기억해보세요.</h2>
             <div className="app-container">
                 <div className="checkbox-container">
                     <input type="checkbox" onClick={handleCheckboxClick} />
