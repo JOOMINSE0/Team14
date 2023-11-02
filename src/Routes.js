@@ -24,6 +24,7 @@ import MyPage from "./pages/MyPage/MyPage"
 import ChangeCharacter from "./pages/ChangeCharacter/ChangeCharacter"
 import WhatisChimae from "./pages/WhatisChimae/WhatisChimae"
 import AllStepChimae from "./pages/AllStepChimae/AllStepChimae"
+import FamilyGuide from "./pages/FamilyGuide/FamilyGuide"
 
 
 export default class AppRoutes extends React.Component {
@@ -56,6 +57,7 @@ export default class AppRoutes extends React.Component {
                     <Route path="/changecharacter" element={<ChangeCharacter />} />
                     <Route path="/whatischimae" element={<WhatisChimae />} />
                     <Route path="/allstepchimae" element={<AllStepChimae />} />
+                    <Route path="/familyguide" element={<FamilyGuide />} />
                 </Routes>
             </Router>
         );

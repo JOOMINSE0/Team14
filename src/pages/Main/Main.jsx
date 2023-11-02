@@ -22,6 +22,10 @@ const Main = () => {
         // 입력 완료 버튼 클릭 시 main 화면으로 이동
         navigate('/allstepchimae');
     };
+    const handleCompleteButtonClick_forfamily = () => {
+        // 입력 완료 버튼 클릭 시 main 화면으로 이동
+        navigate('/familyguide');
+    };
 
     return (
         <div>
@@ -63,6 +67,9 @@ const Main = () => {
                         치매 단계별 증상/준비물 모두 보기
                     </button>
                     <div className="sizedbox"></div>
+                    <button className="chimae-button" onClick={handleCompleteButtonClick_forfamily}>
+                        치매 환자의 가족을 위한 가이드 보기
+                    </button>
                     <div className="main-row">
                         <h2>홍길동</h2>
                         <h2>님의 이맘때 증상과 준비물을 알려드릴게요.</h2>
