@@ -2,6 +2,7 @@ import Nav from "../../../component/Nav/Nav";
 import Header from "../../../component/Header/Header";
 import React, { useState, useEffect } from 'react';
 import './ChimaeYebang.scss';
+import { useNavigate } from 'react-router-dom';
 
 const ChimaeYebang = () => {
     const [score, setScore] = useState(0);
@@ -10,6 +11,11 @@ const ChimaeYebang = () => {
     const gameDuration = 30; // 30초 동안 게임이 진행됨
     const minCircleRadius = 1; // 최소 지름 1
     const maxCircleRadius = 4; // 최대 지름 4
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate('/maingamepage');
+    };
 
     useEffect(() => {
         let gameInterval;
@@ -92,6 +98,8 @@ const ChimaeYebang = () => {
                     ></div>
                 ))}
                 <button onClick={resetGame} className="button">다시 시작</button>
+                <div className="sizedbox"></div>
+                <button onClick={handleButtonClick} className="button">돌아가기</button>
             </div>
             <Nav />
         </div>
