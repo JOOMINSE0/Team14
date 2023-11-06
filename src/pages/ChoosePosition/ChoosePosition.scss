@@ -26,6 +26,7 @@
         border: none;
         position: relative;
         margin-left: 52%;
+        cursor: pointer;
       }
 
 
@@ -42,12 +43,13 @@
     .position-button {
         width: 200px;
         height: 50px;
+        border-radius: 15px;
         background-color: transparent;
         /* 배경을 투명으로 설정 */
         border: 2px solid #735AF3;
-        border-radius: 5px;
+        border-radius: 15px;
         color: #735AF3;
-        font-size: 16px;
+        font-size: 20px;
         cursor: pointer;
         transition: background-color 0.3s;
         /* 배경색 전환 애니메이션 */
@@ -73,8 +75,4 @@
     justify-content: flex-start; // 수평 방향 시작 정렬
     flex-direction: column;
     margin-top: 50%;
-}
-
-.sizedbox {
-    height: 30px;
 }
