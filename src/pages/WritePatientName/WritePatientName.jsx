@@ -42,32 +42,32 @@ const WritePatientName = () => {
 
 
         <div className="write-patient-text">
-            <div>
-                <div style={{fontSize:"20px", display: "inline-block", marginTop:'70%'}}>성별은 
-                <button className="genderBtn">남자</button>
+            <h1>
+                <div style={{fontSize:"20px", display: "inline-block", marginTop:'70%'}}>성별은 &nbsp;
+                <button className="genderBtn">남자</button>&nbsp;
                 <button className="genderBtn">여자</button>
                 </div>
-            </div>
+            </h1>
 
             
-            <div style={{fontSize:"20px"}}>이름은
-            <input style={{borderRadius: '50px', height:'35px', width:'100px', borderRadius: '50px',
+            <h1 style={{fontSize:"20px", display: "flex", marginLeft: "-50px"}}>이름은 &nbsp;&nbsp;
+            <input style={{borderRadius: '50px', height:'45px', width:'150px', borderRadius: '50px',
                 background: '#F4F4F4',
                 boxShadow: '0px 0px 3.52351px 0px rgba(0, 0, 0, 0.20) inset', border:'none'}}
                 className="patient-input"
                 type="text"
                 value={inputText_1}
                 onChange={handleInputChange_1}
-            /></div>
+            /></h1>
                 
         
 
             
-            <div>
-                <h1 style={{fontSize:"20px"}}>치매 시기는</h1>
-            </div>
+            
+            <h1 style={{fontSize:"20px", display: "flex", alignItems: "center"}}>치매 시기는&nbsp;
+            
             <div className="write-patient-row">
-                <input style={{borderRadius: '50px', height:'35px', width:'100px', borderRadius: '50px',
+                <input style={{borderRadius: '50px', height:'35px', width:'40px', borderRadius: '50px',
                 background: '#F4F4F4',
                 boxShadow: '0px 0px 3.52351px 0px rgba(0, 0, 0, 0.20) inset', border:'none'}}
                     type="text"
@@ -75,7 +75,7 @@ const WritePatientName = () => {
                     onChange={handleInputChange_2}
                 />
                 <p style={{fontSize:"20px"}}>월</p>
-                <input style={{borderRadius: '50px', height:'35px', width:'100px', borderRadius: '50px',
+                <input style={{borderRadius: '50px', height:'35px', width:'40px', borderRadius: '50px',
                 background: '#F4F4F4',
                 boxShadow: '0px 0px 3.52351px 0px rgba(0, 0, 0, 0.20) inset', border:'none'}}
                     type="text"
@@ -84,7 +84,9 @@ const WritePatientName = () => {
                 />
                 <p style={{fontSize:"20px"}}>일</p>
             </div>
-            <h2 style={{fontSize:"20px", borderRadius: '50px'}}>입력된 치매 시작 날짜 <br/> {inputText_2}월 {inputText_3}일 부터 치매와 함께 하는 중</h2>
+            </h1>
+            
+            <h2 style={{fontSize:"20px", borderRadius: '50px', textAlign: "center"}}>입력된 치매 시작 날짜 <br/> {inputText_2}월 {inputText_3}일 부터 치매와 함께 하는 중</h2>
             <button className="write-text-button" onClick={handleCompleteButtonClick}>
                 입력 완료
             </button>
