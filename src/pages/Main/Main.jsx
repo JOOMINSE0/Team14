@@ -45,16 +45,12 @@ const Main = () => {
                             캐릭터 바꾸기
                         </button>
                     </div>
-                    <div>
-                        <img src={balloon} alt="이미지" className="image-overlay-balloon" />
 
-                        <div className="text-overlay">동트기 전이 가장 어두운 거래. 항상 고맙고 사랑해!</div>
-                    </div>
                 </div>
                 <div>
                     <div className="main-row">
-                        <h2>홍길동</h2>
-                        <h2>님</h2>
+                        <h2 className="for-chimae-font">홍길동</h2>
+                        <h2 className="for-chimae-font">님</h2>
                     </div>
 
                     <div className="main-row">
@@ -74,19 +70,31 @@ const Main = () => {
                 <button className="chimae-button" onClick={handleCompleteButtonClick_forfamily}>
                     치매 환자 가족을 위한 가이드 보기
                 </button>
-                <div className="main-column">
-                    <h2>홍길동 님의</h2>
-                    <h2>이맘때 증상과 준비물을 알려드릴게요.</h2>
+                <div className="sizedbox"></div>
+                <div className="div-discript-div">
+                    <div className="main-column">
+                        <div className="discript-div">
+                            증상
+                        </div>
+                        <div className="for-text">
+                            <p>오래 전에 경험했던 일은 잘 기억하나,</p>
+                            <p>조금 전에 했던 일 또는 생각을 자주 잊어버린다.</p>
+                            <p>음식을 조리하다가 불 끄는 것을 잊어버리는 경우가 빈번해진다.</p>
+                            <p>평소 잘 알던 사람의 이름이 생각나지 않는다.</p>
+                        </div>
+                    </div>
                 </div>
-                <div className="main-column">
-                    <h1>증상</h1>
-                    <p>오래 전에 경험했던 일은 잘 기억하나, 조금 전에 했던 일 또는 생각을 자주 잊어버린다.</p>
-                    <p>음식을 조리하다가 불 끄는 것을 잊어버리는 경우가 빈번해진다.</p>
-                    <p>평소 잘 알던 사람의 이름이 생각나지 않는다.</p>
-                    <h1>준비물</h1>
-                    <h2>메모장, 볼펜</h2>
-                    <p>메모장과 볼펜을 가지고 다니면서 잊어버리는 것들을 적어놓으세요.</p>
+                <div className="sizedbox"></div>
+                <div className="div-discript-div">
+                    <div className="main-column">
+                        <div className="discript-div">
+                            준비물
+                        </div>
+
+                        <p className="for-text">메모장과 볼펜을 가지고 다니면서 잊어버리는 것들을 적어놓으세요.</p>
+                    </div>
                 </div>
+                <div className="sizedbox"></div>
             </div>
 
 

@@ -98,7 +98,7 @@
 
 .main-column {
     display: flex;
-    align-items: start; // 수직 방향 중앙 정렬
+    align-items: center; // 수직 방향 중앙 정렬
     justify-content: flex-start; // 수평 방향 시작 정렬
     flex-direction: column;
 }
@@ -106,12 +106,46 @@
 .main-row {
     display: flex;
     align-items: center; // 수직 방향 중앙 정렬
-    justify-content: flex-start; // 수평 방향 시작 정렬
+    justify-content: center; // 수평 방향 시작 정렬
     flex-direction: row;
 }
 
+.for-text {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.discript-div {
+    width: 330px;
+    background-color: rgba(115, 90, 243, 0.5);
+    display: flex;
+    align-items: center; // 수직 방향 중앙 정렬
+    justify-content: center; // 수평 방향 시작 정렬
+    flex-direction: row;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+}
+
+.div-discript-div {
+    width: 360px;
+    border: 2px solid rgba(115, 90, 243, 0.5);
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center; // 수직 방향 중앙 정렬
+    justify-content: center; // 수평 방향 시작 정렬
+    flex-direction: row;
+    border-radius: 5px;
+    color: black;
+}
+
 .sizedbox {
-    height: 30px;
+    height: 60px;
+}
+
+.sizedbox-bottom {
+    height: 120px;
 }
 
 .image-overlay-balloon {
@@ -155,4 +189,8 @@
     position: relative;
     justify-content: center;
     align-items: center;
+}
+
+.for-chimae-font {
+    font-size: 20px;
 }
