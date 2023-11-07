@@ -14,10 +14,10 @@ const ClickedMyDiary = () => {
     };
 
     return (
-        <div>
+        <div className="iphone-frame">
             <Header />
             <div className="content clicked-my-diary-column">
-                <p>여기는 개인일기장, 즉 보호자 or 환자의 일기장을 클릭했을 때 보여주는 페이지입니다.</p>
+                <p>이렇게 일기가 작성되었어요.</p>
                 <div className="my-diary-pop"></div>
                 <div className="sizedbox"></div>
                 <button className="clicked-my-diary-button" onClick={handleCompleteButtonClick}>

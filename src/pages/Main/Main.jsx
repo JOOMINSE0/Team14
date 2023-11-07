@@ -49,8 +49,8 @@ const Main = () => {
                 </div>
                 <div>
                     <div className="main-row">
-                        <h2 className="for-chimae-font">홍길동</h2>
-                        <h2 className="for-chimae-font">님</h2>
+                        <h2 className="for-main-chimae-font">홍길동</h2>
+                        <h2 className="for-main-chimae-font">님</h2>
                     </div>
 
                     <div className="main-row">

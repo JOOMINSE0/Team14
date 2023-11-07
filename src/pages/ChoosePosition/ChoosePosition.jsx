@@ -18,7 +18,7 @@ const ChoosePosition = () => {
     };
 
     return (
-        <div>
+        <div className="iphone-frame">
             <h1 className="position-text">환자이신가요, 보호자이신가요?</h1>
             <div className="position-text">
                 <button

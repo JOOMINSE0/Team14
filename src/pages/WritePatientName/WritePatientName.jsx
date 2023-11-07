@@ -30,9 +30,9 @@ const WritePatientName = () => {
 
 
     return (
-        <div className="write-patient-text">
+        <div className="write-patient-text iphone-frame">
             <div>
-                <h1>치매 환자분의 성함을 작성해주세요.</h1>
+                <h2 className="for-splash-chimae-font">치매 환자분의 성함을 작성해주세요.</h2>
             </div>
             <div>
                 <input
@@ -44,7 +44,7 @@ const WritePatientName = () => {
                 <p>입력된 환자분의 성함: {inputText_1}</p>
             </div>
             <div>
-                <h1>치매가 시작된 날짜를 적어주세요.</h1>
+                <h2 className="for-splash-chimae-font">치매가 시작된 날짜를 적어주세요.</h2>
             </div>
             <div className="write-patient-row">
                 <input
@@ -60,7 +60,8 @@ const WritePatientName = () => {
                 />
                 <p>일</p>
             </div>
-            <h2>입력된 치매 시작 날짜: {inputText_2}월 {inputText_3}일 부터 치매와 함께 하는 중</h2>
+            <h2 className="for-splash-chimae-font">입력된 치매 시작 날짜: </h2>
+            <h2 className="for-splash-chimae-font">{inputText_2}월 {inputText_3}일 부터 치매와 함께 하는 중</h2>
             <button className="write-text-button" onClick={handleCompleteButtonClick}>
                 입력 완료
             </button>

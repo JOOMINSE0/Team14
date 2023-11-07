@@ -15,12 +15,14 @@ const Logout = () => {
     };
 
     return (
-        <div>
+        <div className="iphone-frame">
             <Header />
             <div className="content logout-column">
-                <h2>정말 로그아웃 하시겠어요?</h2>
-                <h2>로그아웃을 하면 가족 일기장을 사용할 수 없어요.</h2>
-                <h2>가족 일기장을 사용하시려면 다시 로그인 해주세요.</h2>
+                <div className="for-chimae-font">
+                    <h2>정말 로그아웃 하시겠어요?</h2>
+                    <h2>로그아웃을 하면 가족 일기장을 사용할 수 없어요.</h2>
+                    <h2>가족 일기장을 사용하시려면 다시 로그인 해주세요.</h2>
+                </div>
                 <div className="sizedbox"></div>
                 <button className="logout-button" onClick={handleCompleteButtonClick}>
                     로그아웃 하기

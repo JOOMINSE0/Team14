@@ -15,12 +15,14 @@ const Logout = () => {
     };
 
     return (
-        <div>
+        <div className="iphone-frame">
             <Header />
             <div className="content delete-column">
-                <h2>정말 회원 탈퇴 하시겠어요?</h2>
-                <h2>회원 탈퇴를 하면 가족 일기장을 사용할 수 없어요.</h2>
-                <h2>가족 일기장을 사용하시려면 다시 회원 가입을 해주세요.</h2>
+                <div className="for-chimae-font">
+                    <h2>정말 회원 탈퇴 하시겠어요?</h2>
+                    <h2>회원 탈퇴를 하면 가족 일기장을 사용할 수 없어요.</h2>
+                    <h2>가족 일기장을 사용하시려면 다시 회원 가입을 해주세요.</h2>
+                </div>
                 <div className="sizedbox"></div>
                 <button className="delete-button" onClick={handleCompleteButtonClick}>
                     회원 탈퇴 하기
