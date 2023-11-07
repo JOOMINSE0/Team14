@@ -12,19 +12,49 @@
     flex-direction: row;
 }
 
-.sizedbox {
-    height: 30px;
+.genderBtn{
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #735AF3;
+    color: #735AF3;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+    /* 배경색 전환 애니메이션 */
+
+    &.selected {
+        background-color: #735AF3;
+        /* 선택된 버튼의 배경색을 변경 */
+        color: rgb(255, 255, 255);
+        /* 텍스트 색상 변경 */
+    }
+
+    &:hover {
+        background-color: #735AF3;
+        /* 마우스 호버 시 배경색 변경 */
+        color: white;
+        /* 텍스트 색상 변경 */
+    }
+
 }
 
 .write-text-button {
-    width: 200px;
-    height: 50px;
+    width: 314px;
+    height: 60px;
     background-color: transparent;
     /* 배경을 투명으로 설정 */
     border: 2px solid #735AF3;
+<<<<<<< HEAD
     border-radius: 5px;
     color: #735AF3;
     font-size: 16px;
+=======
+    border-radius: 15px;
+    color: #735AF3;
+    font-size: 20px;
+>>>>>>> d1132049bbabf054a668fbdd6bb456b10ab22489
     cursor: pointer;
     transition: background-color 0.3s;
     /* 배경색 전환 애니메이션 */
@@ -32,7 +62,7 @@
     &.selected {
         background-color: #735AF3;
         /* 선택된 버튼의 배경색을 변경 */
-        color: white;
+        color: rgb(0, 0, 0);
         /* 텍스트 색상 변경 */
     }
 
@@ -45,10 +75,11 @@
 }
 
 .patient-input {
-    width: 250px;
-    height: 50px;
+    width: 150px;
+    height: 35px;
     display: flex;
     align-items: flex-start; // 수직 방향 시작 정렬
     justify-content: flex-start; // 수평 방향 시작 정렬
     flex-direction: column;
+    border-radius: 50px;
 }
