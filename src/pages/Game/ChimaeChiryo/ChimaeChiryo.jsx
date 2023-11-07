@@ -51,16 +51,20 @@ class ChimaeChiryo extends Component {
         const { userInput, result } = this.state;
 
         return (
-            <div>
+            <div className="iphone-frame content">
                 <Header />
                 <div className="word-chain-game">
-                    <h2>끝말잇기 게임입니다. 원하시는 단어를 입력하셔서 시작하세요!</h2>
-                    <div>
+                    <div className="for-chimae-font">
+                        <h2>끝말잇기 게임입니다. </h2>
+                        <h2>원하시는 단어를 입력하셔서 시작하세요!</h2>
+                    </div>
+                    <div className="word-chain-game">
                         <input
                             type="text"
                             value={userInput}
                             onChange={this.handleInputChange}
                         />
+                        <div className="sizedbox"></div>
                         <button onClick={this.handleSubmit} className="wordchain-button">입력 완료</button>
                     </div>
                     <div className="result">{result}</div>

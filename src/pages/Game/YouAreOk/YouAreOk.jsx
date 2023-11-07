@@ -14,11 +14,11 @@ const YouAreOk = () => {
     };
 
     return (
-        <div>
+        <div className="iphone-frame">
             <Header />
             <div className="column">
-                <div className="content">
-                    <h1>너무 건강하시네요! 치매가 아니예요.</h1>
+                <div className="content for-chimae-font">
+                    <h2>너무 건강하시네요! 치매가 아니예요.</h2>
                 </div>
                 <div className="sizedbox"></div>
                 <button className="youareok-button" onClick={handleCompleteButtonClick}>

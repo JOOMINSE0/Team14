@@ -24,12 +24,14 @@ const MainGamePage = () => {
     };
 
     return (
-        <div>
+        <div className="iphone-frame">
             <Header />
             <div className="main-game-page-text-column content">
 
-                <h2>즐거운 게임과 함께,</h2>
-                <h2>치매를 예방하고, 진단하고, 치료해요!</h2>
+                <div className="for-chimae-font">
+                    <h2>즐거운 게임과 함께,</h2>
+                    <h2>치매를 예방하고, 진단하고, 치료해요!</h2>
+                </div>
                 <div>
                     <button
                         className={`main-game-page-button ${selected === 0 ? 'selected' : ''}`}

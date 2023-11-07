@@ -74,14 +74,16 @@ const ChimaeYebang = () => {
     };
 
     return (
-        <div className="content">
+        <div className="content iphone-frame">
             <Header />
             <div className="game-container">
-                <h1>박 터뜨리기 게임</h1>
-                <h2>마구잡이로 생겨나는 동그란 박을 눌러서 터뜨리고 점수를 얻어요.</h2>
-                <h2>제한시간은 30초, 박 하나 당 1점입니다!</h2>
-                <p>점수: {score}점</p>
-                {gameOver && <p>게임 종료!</p>}
+                <div className="for-chimae-font">
+                    <h1>박 터뜨리기 게임</h1>
+                    <h2>마구잡이로 생겨나는 동그란 박을 눌러서 터뜨리고 점수를 얻어요.</h2>
+                    <h2>제한시간은 30초, 박 하나 당 1점입니다!</h2>
+                    <p>점수: {score}점</p>
+                    {gameOver && <p>게임 종료!</p>}
+                </div>
                 {circles.map((circle, index) => (
                     <div
                         key={index}

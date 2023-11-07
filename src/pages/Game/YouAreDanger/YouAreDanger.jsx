@@ -14,11 +14,11 @@ const YouAreDanger = () => {
     };
 
     return (
-        <div>
+        <div className="iphone-frame">
             <Header />
             <div className="column">
-                <div className="content">
-                    <h1>위험해요. 빨리 병원을 방문해보세요!</h1>
+                <div className="content for-chimae-font">
+                    <h2>위험해요. 빨리 병원을 방문해보세요!</h2>
                 </div>
                 <div className="sizedbox"></div>
                 <button className="youaredanger-button" onClick={handleCompleteButtonClick}>

@@ -14,11 +14,11 @@ const WatchOut = () => {
     };
 
     return (
-        <div>
+        <div className="iphone-frame">
             <Header />
             <div className="column">
-                <div className="content">
-                    <h1>치매 전단계에요. 조심하세요!</h1>
+                <div className="content for-chimae-font">
+                    <h2>치매 전단계에요. 조심하세요!</h2>
                 </div>
                 <div className="sizedbox"></div>
                 <button className="watchout-button" onClick={handleCompleteButtonClick}>
