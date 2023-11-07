@@ -3,23 +3,23 @@
     height: 30px;
     background-color: transparent;
     /* 배경을 투명으로 설정 */
-    border: 2px solid #DE98FF;
+    border: 2px solid #735AF3;
     border-radius: 5px;
-    color: #DE98FF;
+    color: #735AF3;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
     /* 배경색 전환 애니메이션 */
 
     &.selected {
-        background-color: #DE98FF;
+        background-color: #735AF3;
         /* 선택된 버튼의 배경색을 변경 */
         color: white;
         /* 텍스트 색상 변경 */
     }
 
     &:hover {
-        background-color: #DE98FF;
+        background-color: #735AF3;
         /* 마우스 호버 시 배경색 변경 */
         color: white;
         /* 텍스트 색상 변경 */
@@ -31,23 +31,23 @@
     height: 50px;
     background-color: transparent;
     /* 배경을 투명으로 설정 */
-    border: 2px solid #DE98FF;
+    border: 2px solid #735AF3;
     border-radius: 5px;
-    color: #DE98FF;
+    color: #735AF3;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
     /* 배경색 전환 애니메이션 */
 
     &.selected {
-        background-color: #DE98FF;
+        background-color: #735AF3;
         /* 선택된 버튼의 배경색을 변경 */
         color: white;
         /* 텍스트 색상 변경 */
     }
 
     &:hover {
-        background-color: #DE98FF;
+        background-color: #735AF3;
         /* 마우스 호버 시 배경색 변경 */
         color: white;
         /* 텍스트 색상 변경 */

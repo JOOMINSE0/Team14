@@ -4,6 +4,7 @@ import { FaArrowLeft } from 'react-icons/fa';
 import './Header.scss';
 import { Link } from 'react-router-dom';
 import remember_logo from '../../assets/logo_header_remember.svg';
+import icon_bell from '../../assets/icon_bell.svg';
 
 function Header() {
     const navigate = useNavigate();
@@ -23,6 +24,7 @@ function Header() {
                     <img src={remember_logo} alt="이미지" />
                 </Link>
             </button>
+            <img src={icon_bell} className="for-bell" alt="이미지" />
 
         </div>
     );

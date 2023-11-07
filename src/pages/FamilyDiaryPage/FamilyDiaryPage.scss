@@ -9,13 +9,13 @@
     right: 30px; // 화면 우측과의 간격 조정
     width: 80px;
     height: 80px;
-    border: 2px solid #DE98FF;
+    border: 2px solid #735AF3;
     background-color: white; // 원 모양의 버튼 배경색
     border-radius: 50%; // 원 모양 만들기
     text-align: center;
     font-size: 24px;
     line-height: 50px;
-    color: #DE98FF; // 텍스트 색상
+    color: #735AF3; // 텍스트 색상
     box-shadow: 3px 3px 5px #888; // 우측 하단 대각선 방향 그림자
     z-index: 999; // 다른 요소 위에 표시
     cursor: pointer; // 마우스 커서 변경
@@ -27,13 +27,13 @@
     right: 30px; // 화면 우측과의 간격 조정
     width: 80px;
     height: 80px;
-    border: 2px solid #DE98FF;
+    border: 2px solid #735AF3;
     background-color: white; // 원 모양의 버튼 배경색
     border-radius: 50%; // 원 모양 만들기
     text-align: center;
     font-size: 16px;
     line-height: 10px; //글자 다 들어가게 하기
-    color: #DE98FF; // 텍스트 색상
+    color: #735AF3; // 텍스트 색상
     box-shadow: 3px 3px 5px #888; // 우측 하단 대각선 방향 그림자
     z-index: 999; // 다른 요소 위에 표시
     cursor: pointer; // 마우스 커서 변경
@@ -42,7 +42,7 @@
 .family-diary {
     width: 100vh;
     height: 100px;
-    border: 2px solid #DE98FF;
+    border: 2px solid #735AF3;
     border-radius: 5px;
     margin-bottom: 10px;
 }
