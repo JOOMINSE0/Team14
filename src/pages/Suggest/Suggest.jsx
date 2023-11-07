@@ -41,7 +41,7 @@ const Suggest = () => {
     return (
         <div>
             <Header />
-            <div className="content suggest-column">
+            <div className="content suggest-column page-animation">
                 <h2>치매와 함께 살아가는 분들을 위해</h2>
                 <h2>사회 제도, 좋은 병원, 있으면 좋은 준비물들을 추천해드려요.</h2>
                 <div>

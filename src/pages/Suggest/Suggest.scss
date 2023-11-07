@@ -27,3 +27,19 @@
     justify-content: flex-start; // 수평 방향 시작 정렬
     flex-direction: column;
 }
+
+@keyframes pageSlide {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.page-animation {
+    animation: pageSlide 1s ease;
+}
