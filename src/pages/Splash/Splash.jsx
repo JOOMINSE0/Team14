@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
 import './Splash.scss';
+import remember_logo from '../../assets/logo_header_remember.svg';
 
 function Splash() {
     const navigate = useNavigate();
@@ -17,7 +18,7 @@ function Splash() {
     return (
         <div className="splash-margin">
             <div className="splash-text">
-                <h1>REMEMBER</h1>
+                <img src={remember_logo} alt="이미지" />
                 <p>우리 가족을 기억해</p>
                 <p>소중한 나를 기억해</p>
             </div>

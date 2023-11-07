@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import './Header.scss';
 import { Link } from 'react-router-dom';
+import remember_logo from '../../assets/logo_header_remember.svg';
 
 function Header() {
     const navigate = useNavigate();
@@ -14,15 +15,15 @@ function Header() {
     return (
         <div className="header-bar">
             <button className="header-button" onClick={goBack}>
-                <FaArrowLeft /> 뒤로가기
+                <FaArrowLeft />
             </button>
 
             <button className="header-button">
-                <Link to="/main" className="mypage-link">리멤버: 잊지 말아요</Link>
+                <Link to="/main" className="mypage-link">
+                    <img src={remember_logo} alt="이미지" />
+                </Link>
             </button>
-            <button className="header-button">
-                <Link to="/mypage" className="mypage-link">마이페이지</Link>
-            </button>
+
         </div>
     );
 }

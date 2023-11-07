@@ -3,7 +3,7 @@
     top: 0;
     width: 100%;
     height: 50px;
-    background-color: #DE98FF;
+    background-color: white;
     /* 연보라색 */
     display: flex;
     justify-content: space-between;
@@ -12,9 +12,9 @@
 
     .header-button {
         //뒤로가기 버튼
-        background-color: #DE98FF;
+        background-color: white;
         border: none;
-        color: white;
+        color: #735AF3;
         font-size: 16px;
         cursor: pointer; //마우스 커서를 손가락 모양으로 변경!
 
@@ -24,6 +24,11 @@
 .header-link {
     text-decoration: none;
     color: white;
+}
+
+.mypage-link {
+    text-decoration: none;
+    color: #735AF3;
 }
 
 .sizedbox {
