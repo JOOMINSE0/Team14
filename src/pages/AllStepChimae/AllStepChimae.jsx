@@ -6,7 +6,7 @@ import Header from "../../component/Header/Header";
 const AllStepChimae = () => {
 
     return (
-        <div>
+        <div className="iphone-frame">
             <Header />
             <div className="content">
                 <h2>초기 치매 증상</h2>

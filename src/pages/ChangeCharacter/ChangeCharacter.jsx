@@ -23,7 +23,7 @@ const ChangeCharacter = () => {
     };
 
     return (
-        <div>
+        <div className="iphone-frame">
             <Header />
             <div className="content change-colum for-margin">
                 <div>
@@ -69,8 +69,9 @@ const ChangeCharacter = () => {
                         캐릭터 선택 완료
                     </button>
                 </div>
-                <Nav />
+
             </div>
+            <Nav />
         </div>
     );
 };

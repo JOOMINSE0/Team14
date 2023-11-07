@@ -1,9 +1,9 @@
 .navigation-bar {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 390px;
     height: 50px;
-    background-color: #735AF3;
+    background-color: #ffffff;
     /* 연보라색 */
     display: flex;
     justify-content: space-around;
@@ -37,5 +37,16 @@
 
 .nav-link {
     text-decoration: none;
-    color: white;
+    color: black;
+}
+
+.nav-column {
+    display: flex;
+    align-items: center; // 수직 방향 중앙 정렬
+    justify-content: center; // 수평 방향 시작 정렬
+    flex-direction: column;
+}
+
+.nav-font {
+    font-size: 10px;
 }

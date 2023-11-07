@@ -84,3 +84,12 @@
     justify-content: flex-start; // 수평 방향 시작 정렬
     flex-direction: column;
 }
+
+.iphone-frame {
+    width: 390px;
+    height: 844px;
+    background: #ffffff;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}

@@ -19,11 +19,6 @@
 }
 
 
-.mypage-link {
-    text-decoration: none;
-    color: #735AF3;
-}
-
 .content {
     margin-top: 70px;
     /* 헤더의 높이만큼 추가 */
@@ -120,7 +115,7 @@
 }
 
 .image-overlay-balloon {
-    width: 100%;
+    width: 160px;
     /* 이미지 너비 조정 */
     position: absolute;
     /* 절대 위치로 설정 */
@@ -140,7 +135,7 @@
     /* 높은 z-index 값을 설정하여 다른 요소 위에 표시되도록 설정 */
     //background-color: rgba(0, 0, 0, 0.5);
     color: black;
-    padding-left: 50px;
+    padding-left: 25px;
     padding-top: 40px;
 }
 
@@ -151,4 +146,13 @@
     justify-content: flex-start; // 수평 방향 시작 정렬
     flex-direction: column;
     word-wrap: break-word;
+}
+
+.iphone-frame {
+    width: 390px;
+    height: 844px;
+    background: #ffffff;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
