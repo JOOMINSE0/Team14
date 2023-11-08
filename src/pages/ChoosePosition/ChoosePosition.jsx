@@ -24,7 +24,7 @@ const ChoosePosition = () => {
             <div className="body">
             <div className="iphone-frame">
             <Header />
-
+            <br/><br/><br/>
             <b className="position-text" style={{fontSize:'24px'}}>환자이신가요, 보호자이신가요?</b>
             <br/><br/><br/>
                 <button style={{height:'60px', width:'314px'}}

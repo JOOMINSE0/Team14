@@ -32,6 +32,7 @@ const MyPage = () => {
     return (
         <div className="iphone-frame">
             <Header />
+            <br/>
             <div className="my-page-text-column content">
                 <div className="my-page-text-row for-chimae-font">
                     <h2>반가워요,</h2>

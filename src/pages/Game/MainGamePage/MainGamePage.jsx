@@ -26,6 +26,7 @@ const MainGamePage = () => {
     return (
         <div className="iphone-frame">
             <Header />
+            <br/>
             <div className="main-game-page-text-column content">
 
                 <div className="for-chimae-font">
