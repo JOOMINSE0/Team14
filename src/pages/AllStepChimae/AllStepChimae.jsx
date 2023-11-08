@@ -8,7 +8,8 @@ const AllStepChimae = () => {
     return (
         <div className="iphone-frame">
             <Header />
-            <div className="content">
+            <br/><br/>
+            <div className="iphone-frame" style={{overflow:"scroll"}}>
                 <h2>초기 치매 증상</h2>
                 <p>가족, 동료들이 어르신의 문제를 알아차리기 시작하나, 아직은 혼자서 지낼 수 있는 수준</p>
                 <p>예전 ‘최근 기억의 감퇴’ 시작</p>

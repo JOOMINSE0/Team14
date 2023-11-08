@@ -6,8 +6,9 @@ import Header from "../../component/Header/Header";
 const FamilyGuide = () => {
 
     return (
-        <div className="iphone-frame">
+        <div className="iphone-frame" style={{overflow:"scroll"}}>
             <Header />
+            <br/>
             <div className="content">
                 <h1>치매환자 가족 수칙</h1>
                 <div className="sizedbox"></div>
