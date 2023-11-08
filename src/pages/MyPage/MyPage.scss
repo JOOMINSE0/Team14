@@ -4,31 +4,31 @@
 }
 
 .my-page-button {
-    width: 300px;
+    width: 390px;
     height: 70px;
     background-color: transparent;
     /* 배경을 투명으로 설정 */
-    border: 2px solid #735AF3;
-    border-radius: 5px;
-    color: #735AF3;
+    border: 2px solid #ffffff;
+    // border-radius: 5px;
+    // color: #735AF3;
     font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    // cursor: pointer;
+    // transition: background-color 0.3s;
     /* 배경색 전환 애니메이션 */
 
-    &.selected {
-        background-color: #735AF3;
-        /* 선택된 버튼의 배경색을 변경 */
-        color: white;
-        /* 텍스트 색상 변경 */
-    }
+    // &.selected {
+    //     background-color: #735AF3;
+    //     /* 선택된 버튼의 배경색을 변경 */
+    //     color: white;
+    //     /* 텍스트 색상 변경 */
+    // }
 
-    &:hover {
-        background-color: #735AF3;
-        /* 마우스 호버 시 배경색 변경 */
-        color: white;
-        /* 텍스트 색상 변경 */
-    }
+    // &:hover {
+    //     background-color: #735AF3;
+    //     /* 마우스 호버 시 배경색 변경 */
+    //     color: white;
+    //     /* 텍스트 색상 변경 */
+    // }
 }
 
 .my-page-text-column {
@@ -64,8 +64,7 @@
     justify-content: center; // 수평 방향 시작 정렬
     flex-direction: column;
     font-size: 12px;
-    margin-left: 15px;
-    margin-right: 15px;
+
 }
 
 .for-text {
@@ -75,4 +74,49 @@
 
 .sizedbox {
     height: 30px;
+}
+
+.mypage-row {
+    display: flex;
+    align-items: center; // 수직 방향 중앙 정렬
+    justify-content: space-between; // 수평 방향 시작 정렬
+    flex-direction: row;
+}
+
+.border-div {
+    width: 100%;
+    background: gray;
+    height: 2px;
+}
+
+.gray-div {
+    width: 390px;
+    height: 350px;
+    background: #F0F0F0;
+    display: flex;
+    align-items: center; // 수직 방향 중앙 정렬
+    justify-content: center; // 수평 방향 시작 정렬
+    flex-direction: column;
+}
+
+.diary-div {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center; // 수직 방향 중앙 정렬
+    justify-content: space-around; // 수평 방향 시작 정렬
+    flex-direction: column;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.just-row {
+    display: flex;
+    align-items: center; // 수직 방향 중앙 정렬
+    justify-content: center; // 수평 방향 시작 정렬
+    flex-direction: row;
+}
+
+.row-sizedbox {
+    width: 10px;
 }
