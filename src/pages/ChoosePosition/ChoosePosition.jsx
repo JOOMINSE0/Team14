@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import './ChoosePosition.scss';
-import alarm from '../../assets/alarm.png';
-import remember from '../../assets/Remember.png';
+import Nav from "../../component/Nav/Nav";
+import Header from "../../component/Header/Header";
 
 const ChoosePosition = () => {
     const [selected, setSelected] = useState(null);
@@ -20,24 +20,15 @@ const ChoosePosition = () => {
     };
 
     return (
-<<<<<<< HEAD
-        <div id="iphone-frame">
+
+
             
-            <div id="logo-container">
-            <img id='logo' src={remember} alt="remember" />
-            <button id="alarm">
-                <img src={alarm} alt="alarm" style={{ width: '18px', height: '20px'}} />
-            </button>
-            </div>
+            <div className="iphone-frame">
+            <Header />
             <h1 className="position-text" style={{fontSize:'24px'}}>환자이신가요, 보호자이신가요?</h1>
-            <div className="position-text" >
-                <button style={{height:'60px', width:'314px'}}
-=======
-        <div className="iphone-frame">
-            <h1 className="position-text">환자이신가요, 보호자이신가요?</h1>
-            <div className="position-text">
+
                 <button
->>>>>>> back/master
+
                     className={`position-button ${selected === 0 ? 'selected' : ''}`}
                     onClick={() => handleButtonClick(0)}
                 >
@@ -50,8 +41,9 @@ const ChoosePosition = () => {
                 >
                     보호자
                 </button>
+                <Nav/>
             </div>
-        </div>
+       
     );
 };
 

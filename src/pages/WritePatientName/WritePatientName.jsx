@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from 'react';
 import './WritePatientName.scss';
 import { useNavigate } from 'react-router-dom';
-import alarm from '../../assets/alarm.png';
-import remember from '../../assets/Remember.png';
+import Nav from "../../component/Nav/Nav";
+import Header from "../../component/Header/Header";
 
 //화면 Main(메인화면) 컴포넌트를 만든다
 const WritePatientName = () => {
@@ -32,14 +32,8 @@ const WritePatientName = () => {
 
 
     return (
-<<<<<<< HEAD
-        <div id="iphone-frame">
-            <div id="logo-container">
-            <img id='logo' src={remember} alt="remember" />
-            <button id="alarm">
-                <img src={alarm} alt="alarm" style={{ width: '18px', height: '20px'}} />
-            </button>
-            </div>
+        <div className="iphone-frame">
+        <Header />
 
 
         <div className="write-patient-text">
@@ -67,24 +61,7 @@ const WritePatientName = () => {
             
             <h1 style={{fontSize:"20px", display: "flex", alignItems: "center", marginLeft: "-20px"}}>치매 시기는&nbsp;&nbsp;
             
-=======
-        <div className="write-patient-text iphone-frame">
-            <div>
-                <h2 className="for-splash-chimae-font">치매 환자분의 성함을 작성해주세요.</h2>
-            </div>
-            <div>
-                <input
-                    className="patient-input"
-                    type="text"
-                    value={inputText_1}
-                    onChange={handleInputChange_1}
-                />
-                <p>입력된 환자분의 성함: {inputText_1}</p>
-            </div>
-            <div>
-                <h2 className="for-splash-chimae-font">치매가 시작된 날짜를 적어주세요.</h2>
-            </div>
->>>>>>> back/master
+
             <div className="write-patient-row">
                 <input style={{borderRadius: '50px', height:'35px', width:'40px', borderRadius: '50px',
                 background: '#F4F4F4',
@@ -103,18 +80,16 @@ const WritePatientName = () => {
                 />
                 <p style={{fontSize:"20px"}}>일</p>
             </div>
-<<<<<<< HEAD
+
             </h1>
             
             <h2 style={{fontSize:"20px", borderRadius: '50px', textAlign: "center"}}>입력된 치매 시작 날짜 <br/> {inputText_2}월 {inputText_3}일 부터 치매와 함께 하는 중</h2>
-=======
-            <h2 className="for-splash-chimae-font">입력된 치매 시작 날짜: </h2>
-            <h2 className="for-splash-chimae-font">{inputText_2}월 {inputText_3}일 부터 치매와 함께 하는 중</h2>
->>>>>>> back/master
+
             <button className="write-text-button" onClick={handleCompleteButtonClick}>
                 입력 완료
             </button>
         </div>
+        <Nav/>
     </div>
     );
 };

@@ -53,7 +53,6 @@
         cursor: pointer;
         transition: background-color 0.3s;
         /* 배경색 전환 애니메이션 */
->>>>>>> d1132049bbabf054a668fbdd6bb456b10ab22489
 
     &.selected {
         background-color: #735AF3;
@@ -75,9 +74,7 @@
     align-items: center; // 수직 방향 중앙 정렬
     justify-content: flex-start; // 수평 방향 시작 정렬
     flex-direction: column;
-<<<<<<< HEAD
     margin-top: 50%;
-=======
     font-size: 20px;
 }
 
@@ -111,5 +108,4 @@
 
 .sizedbox {
     height: 30px;
->>>>>>> back/master
 }
