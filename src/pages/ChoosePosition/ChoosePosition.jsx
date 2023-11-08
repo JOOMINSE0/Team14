@@ -20,6 +20,7 @@ const ChoosePosition = () => {
     };
 
     return (
+<<<<<<< HEAD
         <div id="iphone-frame">
             
             <div id="logo-container">
@@ -31,6 +32,12 @@ const ChoosePosition = () => {
             <h1 className="position-text" style={{fontSize:'24px'}}>환자이신가요, 보호자이신가요?</h1>
             <div className="position-text" >
                 <button style={{height:'60px', width:'314px'}}
+=======
+        <div className="iphone-frame">
+            <h1 className="position-text">환자이신가요, 보호자이신가요?</h1>
+            <div className="position-text">
+                <button
+>>>>>>> back/master
                     className={`position-button ${selected === 0 ? 'selected' : ''}`}
                     onClick={() => handleButtonClick(0)}
                 >

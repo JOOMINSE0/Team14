@@ -24,10 +24,12 @@ const InviteById = () => {
 
 
     return (
-        <div className="content invite-column">
+        <div className="content invite-column iphone-frame">
             <Header />
-            <h2>가족 일기장은 가족이 회원가입 및 로그인을 해야 이용하실 수 있습니다.</h2>
-            <h2>가족의 회원가입 및 로그인 후, 초대하려는 가족의 ID를 입력하세요.</h2>
+            <div className="for-chimae-font">
+                <h2>가족 일기장은 가족이 회원가입 및 로그인을 해야 이용하실 수 있습니다.</h2>
+                <h2>가족의 회원가입 및 로그인 후, 초대하려는 가족의 ID를 입력하세요.</h2>
+            </div>
             <div>
                 <input
                     className="invite-by-id-input"

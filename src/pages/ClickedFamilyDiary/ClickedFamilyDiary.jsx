@@ -14,10 +14,10 @@ const ChooseFamilyDiary = () => {
     };
 
     return (
-        <div>
+        <div className="iphone-frame">
             <Header />
             <div className="content clicked-family-diary-column">
-                <p>여기는 가족일기장의 일기 하나를 클릭했을 때 보여주는 페이지입니다.</p>
+                <h2>이렇게 일기가 작성되었어요.</h2>
                 <div className="family-diary-pop"></div>
                 <div className="sizedbox"></div>
                 <button className="clicked-family-diary-button" onClick={handleCompleteButtonClick}>

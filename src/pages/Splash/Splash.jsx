@@ -16,7 +16,7 @@ function Splash() {
     }, [navigate]);
 
     return (
-        <div className="splash-margin">
+        <div className="iphone-frame">
             <div className="splash-text">
                 <img src={remember_logo} alt="이미지" />
                 <p>우리 가족을 기억해</p>

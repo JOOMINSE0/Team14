@@ -8,7 +8,7 @@ const WhatisChimae = () => {
     return (
         <div>
             <Header />
-            <div className="content">
+            <div className="content iphone-frame">
                 <h2>치매란 무엇일까요?</h2>
                 <p>치매는 후천적으로 기억, 언어, 판단력 등의 여러 영역의 인지 기능이 감소하여 일상생활을 제대로 수행하지 못하는 임상 증후군을 의미합니다.</p>
                 <p>치매에는 알츠하이머병이라 불리는 노인성 치매, 중풍 등으로 인해 생기는 혈관성 치매가 있습니다. 이 밖에도 다양한 원인에 의한 치매가 있습니다.</p>

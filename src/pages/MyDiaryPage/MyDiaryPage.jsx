@@ -16,11 +16,14 @@ const MyDiaryPage = () => {
     };
 
     return (
-        <div>
+        <div className="iphone-frame">
             <Header />
             <div className="content my-diary-column">
-                <h2>가족들에게 고백하기 힘든 속마음을 적어보세요. 나만 볼 수 있는 일기장이에요.</h2>
-                <h2>오늘 찍은 사진, 내 모습을 촬영한 동영상도 함께 기록해보세요.</h2>
+                <div className="for-chimae-font">
+                    <h2>가족들에게 고백하기 힘든 속마음을 적어보세요.</h2>
+                    <h2>나만 볼 수 있는 일기장이에요.</h2>
+                    <h2>오늘 찍은 사진, 내 모습을 촬영한 동영상도 함께 기록해보세요.</h2>
+                </div>
                 <div>
                     {divs.map((index) => (
                         <div

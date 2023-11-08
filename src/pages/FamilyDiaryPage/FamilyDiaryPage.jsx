@@ -20,11 +20,13 @@ const FamiliDiaryPage = () => {
 
 
     return (
-        <div>
+        <div className="iphone-frame">
             <Header />
             <div className="content family-diary-column">
-                <h2>쑥스러워서 직접 말하지 못했던 속마음을 가족들에게 고백하세요.</h2>
-                <h2>함께 찍은 가족 사진, 동영상도 공유하면서 가족을 잊지 말아요.</h2>
+                <div className="for-chimae-font">
+                    <h2>쑥스러워서 직접 말하지 못했던 속마음을 가족들에게 고백하세요.</h2>
+                    <h2>함께 찍은 가족 사진, 동영상도 공유하면서 가족을 잊지 말아요.</h2>
+                </div>
                 <div>
                     {divs.map((index) => (
                         <div

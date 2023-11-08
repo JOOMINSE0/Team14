@@ -30,13 +30,13 @@ const MyPage = () => {
     };
 
     return (
-        <div>
+        <div className="iphone-frame">
             <Header />
             <div className="my-page-text-column content">
-                <div className="my-page-text-row">
-                    <h1>반가워요,</h1>
-                    <h1>홍길동</h1>
-                    <h1>님! 오늘도 건강하세요.</h1>
+                <div className="my-page-text-row for-chimae-font">
+                    <h2>반가워요,</h2>
+                    <h2>홍길동님!</h2>
+                    <h2>오늘도 건강하세요.</h2>
                 </div>
                 <div>
                     <button

@@ -32,12 +32,13 @@ const Login = () => {
 
 
     return (
-        <div>
+        <div className="iphone-frame">
             <Header />
             <div className="content login-column">
 
                 <div>
                     <p>아이디를 입력해주세요.</p>
+                    <div className="sizedbox"></div>
                     <input
                         className="login-input"
                         type="text"
