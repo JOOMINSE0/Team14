@@ -33,7 +33,7 @@ const Main = () => {
     };
 
     return (
-        <div className="iphone-frame">
+        <div className="iphone-frame" style={{overflowY: 'auto'}}>
             <Header />
 
             <div className="content main-column">
