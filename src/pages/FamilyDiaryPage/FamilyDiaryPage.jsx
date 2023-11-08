@@ -20,7 +20,7 @@ const FamiliDiaryPage = () => {
 
 
     return (
-        <div className="iphone-frame">
+        <div className="iphone-frame" style={{overflowY:'scroll'}}>
             <Header />
             <div className="content family-diary-column">
                 <div className="for-chimae-font">

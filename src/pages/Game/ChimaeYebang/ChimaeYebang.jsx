@@ -74,7 +74,7 @@ const ChimaeYebang = () => {
     };
 
     return (
-        <div className="content iphone-frame">
+        <div className="iphone-frame">
             <Header />
             <div className="game-container">
                 <div className="for-chimae-font">

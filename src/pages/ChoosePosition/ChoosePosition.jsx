@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ChoosePosition.scss';
 import Nav from "../../component/Nav/Nav";
@@ -20,28 +21,29 @@ const ChoosePosition = () => {
     };
 
     return (
-
-
-            
+            <div className="body">
             <div className="iphone-frame">
             <Header />
-            <h1 className="position-text" style={{fontSize:'24px'}}>환자이신가요, 보호자이신가요?</h1>
 
-                <button
+            <b className="position-text" style={{fontSize:'24px'}}>환자이신가요, 보호자이신가요?</b>
+            <br/><br/><br/>
+                <button style={{height:'60px', width:'314px'}}
 
                     className={`position-button ${selected === 0 ? 'selected' : ''}`}
                     onClick={() => handleButtonClick(0)}
                 >
-                    환자
+                    <b>환자</b>
                 </button>
-                <br/>
+                <br/><br/><br/>
                 <button style={{height:'60px', width:'314px'}}
                     className={`position-button ${selected === 1 ? 'selected' : ''}`}
                     onClick={() => handleButtonClick(1)}
                 >
-                    보호자
+                    <b>보호자</b>
                 </button>
+
                 <Nav/>
+            </div>
             </div>
        
     );

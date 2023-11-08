@@ -6,7 +6,7 @@ import Header from "../../component/Header/Header";
 const FamilyGuide = () => {
 
     return (
-        <div>
+        <div className="iphone-frame">
             <Header />
             <div className="content">
                 <h1>치매환자 가족 수칙</h1>

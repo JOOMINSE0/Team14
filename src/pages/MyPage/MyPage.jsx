@@ -30,7 +30,7 @@ const MyPage = () => {
     };
 
     return (
-        <div className="iphone-frame" style={{overflowY: 'scroll'}}>
+        <div className="iphone-frame">
             <Header />
             <div className="my-page-text-column content">
                 <div className="my-page-text-row for-chimae-font">

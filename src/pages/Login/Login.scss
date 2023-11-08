@@ -45,8 +45,8 @@
 }
 
 .go-to-signup-button {
-    width: 170px;
-    height: 30px;
+    width: 300px;
+    height: 50px;
     background-color: transparent;
     /* 배경을 투명으로 설정 */
     border: 2px solid #735AF3;
@@ -73,12 +73,15 @@
 }
 
 .login-input {
-    width: 250px;
+    width: 300px;
     height: 40px;
     display: flex;
     align-items: flex-start; // 수직 방향 시작 정렬
     justify-content: flex-start; // 수평 방향 시작 정렬
     flex-direction: column;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 0px 0px 3.52351px 0px rgba(0, 0, 0, 0.20) inset;
 }
 
 .iphone-frame {
