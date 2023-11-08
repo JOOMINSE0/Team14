@@ -39,7 +39,7 @@ const Suggest = () => {
     const divs = Array.from({ length: divCount }, (_, index) => index);
 
     return (
-        <div className="iphone-frame">
+        <div className="iphone-frame" style={{overflowY: 'auto'}}>
             <Header />
             <div className="content suggest-column page-animation">
                 <div className="for-chimae-font">

@@ -16,7 +16,7 @@ const MyDiaryPage = () => {
     };
 
     return (
-        <div className="iphone-frame">
+        <div className="iphone-frame" style={{overflowY:'scroll'}}>
             <Header />
             <div className="content my-diary-column">
                 <div className="for-chimae-font">
@@ -32,10 +32,11 @@ const MyDiaryPage = () => {
                         ></div>
                     ))}
                 </div>
-            </div>
             <button className="fixed-button" onClick={handleWriteMyDiaryClick}>
                 <span>+</span>
             </button>
+            </div>
+
             <Nav />
         </div>
     );

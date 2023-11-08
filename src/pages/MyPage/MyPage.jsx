@@ -41,8 +41,9 @@ const MyPage = () => {
     };
 
     return (
-        <div className="iphone-frame">
+        <div className="iphone-frame" style={{overflow:"scroll"}}>
             <Header />
+            <br/>
             <div className="my-page-text-column content">
                 <img src={selectedImage} alt="이미지" className="image-overlay-people" />
                 <div className="my-page-text-row for-chimae-font">
