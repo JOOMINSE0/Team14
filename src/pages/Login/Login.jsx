@@ -38,6 +38,7 @@ const Login = () => {
 
                 <div>
                     <p>아이디를 입력해주세요.</p>
+                    <div className="sizedbox"></div>
                     <input
                         className="login-input"
                         type="text"

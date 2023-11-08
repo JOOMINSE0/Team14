@@ -24,7 +24,8 @@ const WriteMyDiary = () => {
             <Header />
             <div className="content write-my-diary-column">
                 <div className="for-chimae-font">
-                    <h2>오늘의 일기를 써보세요. 나만 볼 수 있는 일기장이에요.</h2>
+                    <h2>오늘의 일기를 써보세요.</h2>
+                    <h2>나만 볼 수 있는 일기장이에요.</h2>
                     <h2>오늘 하루는 어땠나요?</h2>
                 </div>
                 <div>
