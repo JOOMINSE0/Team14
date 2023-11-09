@@ -54,7 +54,7 @@
 .family-diary-column {
     display: flex;
     align-items: center; // 수직 방향 중앙 정렬
-    justify-content: flex-start; // 수평 방향 시작 정렬
+    justify-content: center; // 수평 방향 시작 정렬
     flex-direction: column;
 }
 

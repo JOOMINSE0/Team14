@@ -4,23 +4,22 @@ import Header from "../../component/Header/Header";
 import './FamilyDiaryPage.scss';
 import { useNavigate } from 'react-router-dom';
 
-//화면 Main(메인화면) 컴포넌트를 만든다
 const FamiliDiaryPage = () => {
-    const divCount = 13; // 생성할 div의 개수
-    const divs = Array.from({ length: divCount }, (_, index) => index);
+    const buttonCount = 13; // 생성할 버튼의 개수
+    const buttons = Array.from({ length: buttonCount }, (_, index) => index);
 
-    const navigate = useNavigate(); // useNavigate 훅을 사용
+    const navigate = useNavigate();
+
     const handleWriteFamilyDiaryClick = () => {
-        // '+ 버튼' 클릭 시 '/writefamilydiary' 페이지로 이동
         navigate('/writefamilydiary');
     };
+
     const handleWriteFamilyDiaryClick_invite = () => {
         navigate('/invitebyid');
     };
 
-
     return (
-        <div className="iphone-frame" style={{overflowY:'scroll'}}>
+        <div className="iphone-frame" style={{ overflowY: 'scroll' }}>
             <Header />
             <div className="content family-diary-column">
                 <div className="for-chimae-font">
@@ -28,12 +27,16 @@ const FamiliDiaryPage = () => {
                     <b>함께 찍은 가족 사진, 동영상도 공유하면서 가족을 잊지 말아요.</b>
                     <br/>
                 </div>
-                <div>
-                    {divs.map((index) => (
-                        <div
+                <div className="family-diary-column">
+                    {buttons.map((index) => (
+                        <button
                             key={index}
                             className="family-diary"
-                        ></div>
+                            onClick={() => navigate('/clickedfamilydiary')}
+                        >
+                            {/* 버튼 내용을 여기서 추가하면 됨*/}
+                            {index}번째 가족 일기
+                        </button>
                     ))}
                 </div>
             </div>
