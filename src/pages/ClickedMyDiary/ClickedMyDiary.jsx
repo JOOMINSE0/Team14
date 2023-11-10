@@ -17,8 +17,13 @@ const ClickedMyDiary = () => {
         <div className="iphone-frame">
             <Header />
             <div className="content clicked-my-diary-column">
-                <p>이렇게 일기가 작성되었어요.</p>
-                <div className="my-diary-pop"></div>
+                <h2>이렇게 일기가 작성되었어요.</h2>
+                <div>
+                    <p>사실은 너무 두렵다.</p>
+                </div>
+                <div className="my-diary-pop">
+                    열심히 응원해주는 가족들에게는 말을 못하겠다. 사실 너무 무섭다. 언젠가는 모든 기억을 잃어버리게 되는 건 아닌지, 대소변을 못가리게 되면 어쩌지... 너무 무섭다.
+                </div>
                 <div className="sizedbox"></div>
                 <button className="clicked-my-diary-button" onClick={handleCompleteButtonClick}>
                     나의 일기장 목록으로 돌아가기
