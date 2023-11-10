@@ -1,0 +1,32 @@
+.header-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 390px;
+    height: 50px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ccc;
+    margin-top: 50px;
+    /* Header의 높이만큼 여백 설정 */
+
+
+    .navigation-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        color: #555;
+        padding: 10px;
+        outline: none;
+        transition: color 0.3s, border-color 0.3s;
+
+        &.active {
+            color: #000;
+            border-bottom: 2px solid #000;
+        }
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
