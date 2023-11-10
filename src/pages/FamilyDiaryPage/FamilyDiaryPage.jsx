@@ -19,6 +19,25 @@ const FamiliDiaryPage = () => {
         navigate('/invitebyid');
     };
 
+    const move_ex_1 = () => {
+        navigate('/familydiary_ex_1');
+    };
+    const move_ex_2 = () => {
+        navigate('/familydiary_ex_2');
+    };
+    const move_ex_3 = () => {
+        navigate('/familydiary_ex_3');
+    };
+    const move_ex_4 = () => {
+        navigate('/familydiary_ex_4');
+    };
+    const move_ex_5 = () => {
+        navigate('/familydiary_ex_5');
+    };
+    const move_ex_6 = () => {
+        navigate('/familydiary_ex_6');
+    };
+
     return (
         <div className="iphone-frame" style={{ overflowY: 'scroll' }}>
             <Header />
@@ -35,7 +54,7 @@ const FamiliDiaryPage = () => {
                             <img src={calender} alt="이미지" />
                             오늘
                         </div>
-                        <button className='calender-row'>
+                        <button className='calender-row' onClick={move_ex_1}>
                             <div className="calender-column">
                                 <div>21</div>
                                 <div>수</div>
@@ -52,7 +71,7 @@ const FamiliDiaryPage = () => {
                             <img src={calender} alt="이미지" />
                             어제
                         </div>
-                        <button className='calender-row'>
+                        <button className='calender-row' onClick={move_ex_2}>
                             <div className="calender-column">
                                 <div>20</div>
                                 <div>화</div>
@@ -69,7 +88,7 @@ const FamiliDiaryPage = () => {
                             <img src={calender} alt="이미지" />
                             지난주
                         </div>
-                        <button className='calender-row'>
+                        <button className='calender-row' onClick={move_ex_3}>
                             <div className="calender-column">
                                 <div>17</div>
                                 <div>토</div>
@@ -80,7 +99,7 @@ const FamiliDiaryPage = () => {
                             </div>
                             <img src={picture} alt="이미지" className="image" />
                         </button>
-                        <button className='calender-row'>
+                        <button className='calender-row' onClick={move_ex_4}>
                             <div className="calender-column">
                                 <div>13</div>
                                 <div>화</div>
@@ -99,7 +118,7 @@ const FamiliDiaryPage = () => {
                             <img src={calender} alt="이미지" />
                             저번달
                         </div>
-                        <button className='calender-row'>
+                        <button className='calender-row' onClick={move_ex_5}>
                             <div className="calender-column">
                                 <div>21</div>
                                 <div>목</div>
@@ -109,7 +128,7 @@ const FamiliDiaryPage = () => {
                                 어머님 기억이 안날 땐 여길 보고 기억하세요.
                             </div>
                         </button>
-                        <button className='calender-row'>
+                        <button className='calender-row' onClick={move_ex_6}>
                             <div className="calender-column">
                                 <div>19</div>
                                 <div>화</div>

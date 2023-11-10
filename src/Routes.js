@@ -30,6 +30,16 @@ import AllStepChimae from "./pages/AllStepChimae/AllStepChimae"
 import FamilyGuide from "./pages/FamilyGuide/FamilyGuide"
 import ModifyFamilyDiary from "./pages/ModifyFamilyDiary/ModifyFamilyDiary"
 import ModifyMyDiary from "./pages/ModifyMyDiary/ModifyMyDiary"
+import FamilyDiary_ex_1 from "./pages/FamilyDiary_ex_1/FamilyDiary_ex_1"
+import FamilyDiary_ex_2 from "./pages/FamilyDiary_ex_2/FamilyDiary_ex_2"
+import FamilyDiary_ex_3 from "./pages/FamilyDiary_ex_3/FamilyDiary_ex_3"
+import FamilyDiary_ex_4 from "./pages/FamilyDiary_ex_4/FamilyDiary_ex_4"
+import FamilyDiary_ex_5 from "./pages/FamilyDiary_ex_5/FamilyDiary_ex_5"
+import FamilyDiary_ex_6 from "./pages/FamilyDiary_ex_6/FamilyDiary_ex_6"
+import MyDiary_ex_1 from "./pages/MyDiary_ex_1/MyDiary_ex_1"
+import MyDiary_ex_2 from "./pages/MyDiary_ex_2/MyDiary_ex_2"
+import MyDiary_ex_3 from "./pages/MyDiary_ex_3/MyDiary_ex_3"
+import MyDiary_ex_4 from "./pages/MyDiary_ex_4/MyDiary_ex_4"
 
 export default class AppRoutes extends React.Component {
 
@@ -67,6 +77,16 @@ export default class AppRoutes extends React.Component {
                     <Route path="/youaredanger" element={<YouAreDanger />} />
                     <Route path="/modifyfamilydiary" element={<ModifyFamilyDiary />} />
                     <Route path="/modifymydiary" element={<ModifyMyDiary />} />
+                    <Route path="/familydiary_ex_1" element={<FamilyDiary_ex_1 />} />
+                    <Route path="/familydiary_ex_2" element={<FamilyDiary_ex_2 />} />
+                    <Route path="/familydiary_ex_3" element={<FamilyDiary_ex_3 />} />
+                    <Route path="/familydiary_ex_4" element={<FamilyDiary_ex_4 />} />
+                    <Route path="/familydiary_ex_5" element={<FamilyDiary_ex_5 />} />
+                    <Route path="/familydiary_ex_6" element={<FamilyDiary_ex_6 />} />
+                    <Route path="/mydiary_ex_1" element={<MyDiary_ex_1 />} />
+                    <Route path="/mydiary_ex_2" element={<MyDiary_ex_2 />} />
+                    <Route path="/mydiary_ex_3" element={<MyDiary_ex_3 />} />
+                    <Route path="/mydiary_ex_4" element={<MyDiary_ex_4 />} />
                 </Routes>
             </Router>
         );
