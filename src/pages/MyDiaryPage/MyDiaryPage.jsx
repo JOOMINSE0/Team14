@@ -15,6 +15,19 @@ const MyDiaryPage = () => {
         navigate('/writemydiary');
     };
 
+    const move_ex_1 = () => {
+        navigate('/mydiary_ex_1');
+    };
+    const move_ex_2 = () => {
+        navigate('/mydiary_ex_2');
+    };
+    const move_ex_3 = () => {
+        navigate('/mydiary_ex_3');
+    };
+    const move_ex_4 = () => {
+        navigate('/mydiary_ex_4');
+    };
+
     return (
         <div className="iphone-frame" style={{ overflowY: 'scroll' }}>
             <Header />
@@ -48,7 +61,7 @@ const MyDiaryPage = () => {
                             <img src={calender} alt="이미지" />
                             오늘
                         </div>
-                        <button className='calender-row'>
+                        <button className='calender-row' onClick={move_ex_1}>
                             <div className="calender-column">
                                 <div>21</div>
                                 <div>수</div>
@@ -66,7 +79,7 @@ const MyDiaryPage = () => {
                             <img src={calender} alt="이미지" />
                             어제
                         </div>
-                        <button className='calender-row'>
+                        <button className='calender-row' onClick={move_ex_2}>
                             <div className="calender-column">
                                 <div>20</div>
                                 <div>화</div>
@@ -83,7 +96,7 @@ const MyDiaryPage = () => {
                             <img src={calender} alt="이미지" />
                             지난주
                         </div>
-                        <button className='calender-row'>
+                        <button className='calender-row' onClick={move_ex_3}>
                             <div className="calender-column">
                                 <div>17</div>
                                 <div>토</div>
@@ -93,7 +106,7 @@ const MyDiaryPage = () => {
                                 아들에게는 말 못하지만, 너무 섭섭했다...
                             </div>
                         </button>
-                        <button className='calender-row'>
+                        <button className='calender-row' onClick={move_ex_4}>
                             <div className="calender-column">
                                 <div>13</div>
                                 <div>화</div>
