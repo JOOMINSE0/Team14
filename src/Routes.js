@@ -28,7 +28,8 @@ import ChangeCharacter from "./pages/ChangeCharacter/ChangeCharacter"
 import WhatisChimae from "./pages/WhatisChimae/WhatisChimae"
 import AllStepChimae from "./pages/AllStepChimae/AllStepChimae"
 import FamilyGuide from "./pages/FamilyGuide/FamilyGuide"
-
+import ModifyFamilyDiary from "./pages/ModifyFamilyDiary/ModifyFamilyDiary"
+import ModifyMyDiary from "./pages/ModifyMyDiary/ModifyMyDiary"
 
 export default class AppRoutes extends React.Component {
 
@@ -64,6 +65,8 @@ export default class AppRoutes extends React.Component {
                     <Route path="/youareok" element={<YouAreOk />} />
                     <Route path="/watchout" element={<WatchOut />} />
                     <Route path="/youaredanger" element={<YouAreDanger />} />
+                    <Route path="/modifyfamilydiary" element={<ModifyFamilyDiary />} />
+                    <Route path="/modifymydiary" element={<ModifyMyDiary />} />
                 </Routes>
             </Router>
         );
