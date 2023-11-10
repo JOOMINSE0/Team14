@@ -79,6 +79,22 @@
     margin-right: 15px;
 }
 
-.sizedbox {
+.modify {
+    width: 100px;
     height: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: gray;
+}
+
+.make-row {
+    display: flex;
+    align-items: center; // 수직 방향 중앙 정렬
+    justify-content: center; // 수평 방향 시작 정렬
+    flex-direction: row;
+}
+
+.sizedbox-row {
+    width: 20px;
 }

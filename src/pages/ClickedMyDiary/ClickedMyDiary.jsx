@@ -13,6 +13,16 @@ const ClickedMyDiary = () => {
         navigate('/mydiarypage');
     };
 
+    const clickedmodify = () => {
+        // 입력 완료 버튼 클릭 시 main 화면으로 이동
+        navigate('/familydiarypage');
+    };
+
+    const clickeddelete = () => {
+        // 입력 완료 버튼 클릭 시 main 화면으로 이동
+        alert('나만의 일기가 삭제되었습니다!');
+    };
+
     return (
         <div className="iphone-frame">
             <Header />
@@ -28,6 +38,16 @@ const ClickedMyDiary = () => {
                 <button className="clicked-my-diary-button" onClick={handleCompleteButtonClick}>
                     나의 일기장 목록으로 돌아가기
                 </button>
+                <div className="sizedbox"></div>
+                <div className="make-row">
+                    <button className="modify" onClick={clickedmodify}>
+                        수정하기
+                    </button>
+                    <div className="sizedbox-row"></div>
+                    <button className="modify" onClick={clickeddelete}>
+                        삭제하기
+                    </button>
+                </div>
             </div>
             <Nav />
         </div>
