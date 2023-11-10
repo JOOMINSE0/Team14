@@ -15,7 +15,7 @@ const ChooseFamilyDiary = () => {
 
     const clickedmodify = () => {
         // 입력 완료 버튼 클릭 시 main 화면으로 이동
-        navigate('/familydiarypage');
+        navigate('/modifyfamilydiary');
     };
 
     const clickeddelete = () => {
