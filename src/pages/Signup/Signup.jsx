@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Nav from "../../component/Nav/Nav";
 import Header from "../../component/Header/Header";
+import { useState } from 'react';
 import './Signup.scss';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
 
+//화면 Main(메인화면) 컴포넌트를 만든다
 const Signup = () => {
-    const [inputText_1, setInputText_1] = useState(''); // 초기값 설정(아이디)
-    const [inputText_2, setInputText_2] = useState(''); // 초기값 설정(비밀번호)
+    const [inputText_1, setInputText_1] = useState(''); // 초기값 설정(이름)
+    const [inputText_2, setInputText_2] = useState(''); // 초기값 설정(날짜. 월)
     const navigate = useNavigate(); // useNavigate 훅을 사용
 
     const handleInputChange_1 = (e) => {
@@ -18,50 +19,23 @@ const Signup = () => {
         setInputText_2(e.target.value);
     };
 
-    const handleCompleteButtonClick = async () => {
-
-        try {
-            // FormData 생성
-            const formData = new FormData();
-            formData.append('username', inputText_1);
-            formData.append('password1', inputText_2);
-            formData.append('password2', inputText_2);
-            formData.append('nickname', 'lny');
-            formData.append('invited_users', null);
-
-            // 회원가입 요청 보내기
-            const response = await axios.post('https://port-0-likelion-myrrhthon-back-1igmo82clos9yp4o.sel5.cloudtype.app/member/signup/', formData);
-
-            // 회원가입 성공 시 처리
-            const token = response.data.token;
-
-            // 토큰을 로컬 스토리지나 쿠키 등에 저장
-            localStorage.setItem('token', token);
-
-            alert('성공적으로 회원가입되었습니다!');
-            navigate('/login');
-        } catch (error) {
-            // 회원가입 실패 시 처리
-            console.error('회원가입 실패', error);
-            if (error.response) {
-                // 서버 응답이 있는 경우 응답 내용 출력
-                console.error('응답 데이터:', error.response.data);
-                console.error('상태 코드:', error.response.status);
-            }
-            alert('회원가입에 실패했습니다. 다시 시도해주세요.');
-        }
-
+    const handleCompleteButtonClick = () => {
+        alert('성공적으로 회원가입되었습니다!');
+        // 입력 완료 버튼 클릭 시 main 화면으로 이동
+        navigate('/login');
     };
 
     const handleCompleteButtonClick_check_ok = () => {
-        // 사용 가능한 아이디인지 검사하는 로직 추가
+        // 입력 완료 버튼 클릭 시 main 화면으로 이동
         alert('사용 가능한 아이디입니다!');
     };
+
 
     return (
         <div className="iphone-frame">
             <Header />
             <div className="content signup-column">
+
                 <div>
                     <p>사용하실 아이디를 입력해주세요.</p>
                     <input
@@ -74,7 +48,7 @@ const Signup = () => {
                     <p>사용하실 비밀번호를 입력해주세요.</p>
                     <input
                         className="signup-input"
-                        type="password"
+                        type="text"
                         value={inputText_2}
                         onChange={handleInputChange_2}
                     />
