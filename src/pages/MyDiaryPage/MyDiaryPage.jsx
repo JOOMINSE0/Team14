@@ -132,6 +132,7 @@ const MyDiaryPage = () => {
                                 <img src={icon_profile_4} alt="이미지" className="image" />
                             </div>
                         </button>
+                        <div className="sizedbox"></div>
                     </div>
                 </div>
                 <button className="fixed-button" onClick={handleWriteMyDiaryClick}>

@@ -41,7 +41,7 @@ const MyDiary_ex_6 = () => {
                     </div>
                 </div>
                 <div className="my-diary-pop">
-                    치매에 걸려 잘해준 것도 없고, 고생만 시켜서 미안한 맘 뿐이다. 건강했던 시절의 좋은 기억만 갖고 나를 좋은 엄마로, 좋은 시어머니로 기억해주렴
+                    치매에 걸려 잘해준 것도 없고, 고생만 시켜서 미안한 맘 뿐이다. 건강했던 시절의 좋은 기억만 갖고 좋은 엄마로, 시어머니로 기억해주렴
                     <img src={icon_profile_6} alt="이미지" className="image-clicked" />
                 </div>
                 <div className="sizedbox"></div>
