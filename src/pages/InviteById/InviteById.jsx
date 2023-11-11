@@ -17,9 +17,12 @@ const InviteById = () => {
     };
 
     const handleCompleteButtonClick = () => {
-        // 입력 완료 버튼 클릭 시 main 화면으로 이동
-        alert('일기장에 가족이 초대되었습니다!');
-        navigate('/familydiarypage');
+        if (inputText === 'lny021102') {
+            alert('일기장에 가족이 초대되었습니다!');
+            navigate('/familydiarypage');
+        } else {
+            alert('아이디가 없어요! 가족에게 회원가입을 안내해주세요.');
+        }
     };
 
 
