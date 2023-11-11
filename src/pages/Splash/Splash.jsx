@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
 import './Splash.scss';
 import remember_logo from '../../assets/logo_header_remember.svg';
+import axios from 'axios';
 
 function Splash() {
     const navigate = useNavigate();

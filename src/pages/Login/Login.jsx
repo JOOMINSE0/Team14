@@ -4,7 +4,7 @@ import Header from "../../component/Header/Header";
 import { useState } from 'react';
 import './Login.scss';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+
 
 //화면 Main(메인화면) 컴포넌트를 만든다
 const Login = () => {
