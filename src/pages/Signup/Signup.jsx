@@ -32,6 +32,7 @@ const Signup = () => {
         } catch (error) {
             // 회원가입 실패 시 처리
             console.error('회원가입 실패', error);
+            //console.log(response);
             alert('회원가입에 실패했습니다. 다시 시도해주세요.');
         }
     };
