@@ -22,7 +22,7 @@ const Signup = () => {
     const handleCompleteButtonClick = () => {
         alert('성공적으로 회원가입되었습니다!');
         // 입력 완료 버튼 클릭 시 main 화면으로 이동
-        navigate('/main');
+        navigate('/login');
     };
 
     const handleCompleteButtonClick_check_ok = () => {
