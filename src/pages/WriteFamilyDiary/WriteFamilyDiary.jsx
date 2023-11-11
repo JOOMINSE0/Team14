@@ -14,6 +14,10 @@ const WriteFamilyDiary = () => {
         setInputText(e.target.value);
     };
 
+    const handleInputChange_title = (e) => {
+        setInputText(e.target.value);
+    };
+
     const handleCompleteButtonClick = () => {
         // 입력 완료 버튼 클릭 시 main 화면으로 이동
         navigate('/clickedfamilydiary');
@@ -24,12 +28,19 @@ const WriteFamilyDiary = () => {
             <Header />
             <div className="content write-family-diary-column">
                 <div className="for-chimae-font">
-                    <h2>오늘의 일기를 써보세요.</h2>
                     <h2>가족들과 함께 볼 수 있는 일기장이에요.</h2>
                     <h2>오늘 하루는 어땠나요?</h2>
                 </div>
+                <div className='for-chimae-font'> <p>일기의 제목을 지어주세요.</p> </div>
                 <div>
-
+                    <textarea
+                        className="my-diary-title-input"
+                        type="text"
+                        value={inputText}
+                        onChange={handleInputChange_title}>
+                    </textarea>
+                </div>
+                <div>
                     <textarea
                         className="family-diary-input"
                         type="text"
