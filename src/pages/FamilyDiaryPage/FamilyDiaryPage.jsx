@@ -58,8 +58,8 @@ const FamiliDiaryPage = () => {
                         </div>
                         <button className='calender-row' onClick={move_ex_1}>
                             <div className="calender-column">
-                                <div>21</div>
-                                <div>수</div>
+                                <div>12</div>
+                                <div>일</div>
                             </div>
                             <div className='sizedbox-row'></div>
                             <div className='title-start'>
@@ -75,8 +75,8 @@ const FamiliDiaryPage = () => {
                         </div>
                         <button className='calender-row' onClick={move_ex_2}>
                             <div className="calender-column">
-                                <div>20</div>
-                                <div>화</div>
+                                <div>11</div>
+                                <div>토</div>
                             </div>
                             <div className='sizedbox-row'></div>
                             <div className='title-start'>
@@ -93,8 +93,8 @@ const FamiliDiaryPage = () => {
                         </div>
                         <button className='calender-row' onClick={move_ex_3}>
                             <div className="calender-column">
-                                <div>17</div>
-                                <div>토</div>
+                                <div>10</div>
+                                <div>금</div>
                             </div>
                             <div className='sizedbox-row'></div>
                             <div className='title-start'>
@@ -104,8 +104,8 @@ const FamiliDiaryPage = () => {
                         </button>
                         <button className='calender-row' onClick={move_ex_4}>
                             <div className="calender-column">
-                                <div>13</div>
-                                <div>화</div>
+                                <div>10</div>
+                                <div>금</div>
                             </div>
                             <div className='sizedbox-row'></div>
                             <div className='title-start'>
@@ -123,7 +123,7 @@ const FamiliDiaryPage = () => {
                         </div>
                         <button className='calender-row' onClick={move_ex_5}>
                             <div className="calender-column">
-                                <div>21</div>
+                                <div>31</div>
                                 <div>목</div>
                             </div>
                             <div className='sizedbox-row'></div>
@@ -134,8 +134,8 @@ const FamiliDiaryPage = () => {
                         </button>
                         <button className='calender-row' onClick={move_ex_6}>
                             <div className="calender-column">
-                                <div>19</div>
-                                <div>화</div>
+                                <div>31</div>
+                                <div>목</div>
                             </div>
                             <div className='sizedbox-row'></div>
                             <div className='title-start'>
