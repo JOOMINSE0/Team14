@@ -142,6 +142,7 @@ const FamiliDiaryPage = () => {
                                 옷 따뜻하게 입고 다녀야 합니다. 우리가족 !!
                             </div>
                         </button>
+                        <div className="sizedbox"></div>
                     </div>
                 </div>
             </div>
