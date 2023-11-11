@@ -53,9 +53,6 @@ const WriteFamilyDiary = () => {
                         value={inputText}
                         onChange={handleInputChange}
                     ></textarea>
-<<<<<<< HEAD
-                </div><br/>
-=======
                 </div>
                 <div>
                     {/* 파일 업로드를 위한 input 추가 */}
@@ -66,7 +63,6 @@ const WriteFamilyDiary = () => {
                     />
                 </div>
                 <div className="sizedbox"></div>
->>>>>>> back/master
                 <button className="write-family-diary-button" onClick={handleCompleteButtonClick}>
                     입력 완료
                 </button>
