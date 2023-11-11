@@ -7,6 +7,8 @@ import HeaderNavigation from "../../component/HeaderNavigation/HeaderNavigation"
 import calender from '../../assets/diary_calander.svg';
 import flower from '../../assets/flower.jpg';
 import icon_profile_4 from '../../assets/icon_profile_4.jpg';
+import icon_profile_5 from '../../assets/icon_profile_5.jpg';
+import icon_profile_6 from '../../assets/icon_profile_6.jpg';
 
 //화면 Main(메인화면) 컴포넌트를 만든다
 const MyDiaryPage = () => {
@@ -29,6 +31,12 @@ const MyDiaryPage = () => {
     const move_ex_4 = () => {
         navigate('/mydiary_ex_4');
     };
+    const move_ex_5 = () => {
+        navigate('/mydiary_ex_5');
+    };
+    const move_ex_6 = () => {
+        navigate('/mydiary_ex_6');
+    };
 
     return (
         <div className="iphone-frame" style={{ overflowY: 'scroll' }}>
@@ -45,6 +53,29 @@ const MyDiaryPage = () => {
                             <img src={calender} alt="이미지" />
                             오늘
                         </div>
+
+                        <button className='calender-row' onClick={move_ex_5}>
+                            <div className="calender-column">
+                                <div>12</div>
+                                <div>일</div>
+                            </div>
+                            <div className='sizedbox-row'></div>
+                            <div className='title-start'>
+                                며느리와 가족들에게 미안한 나날의 연속...
+                                <img src={icon_profile_5} alt="이미지" className="image" />
+                            </div>
+                        </button>
+                        <button className='calender-row' onClick={move_ex_6}>
+                            <div className="calender-column">
+                                <div>12</div>
+                                <div>일</div>
+                            </div>
+                            <div className='sizedbox-row'></div>
+                            <div className='title-start'>
+                                내가 죽고 나면 아들이, 며느리가 나를 기억해주기를..
+                                <img src={icon_profile_6} alt="이미지" className="image" />
+                            </div>
+                        </button>
                         <button className='calender-row' onClick={move_ex_1}>
                             <div className="calender-column">
                                 <div>12</div>
