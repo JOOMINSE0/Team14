@@ -19,22 +19,38 @@ const Signup = () => {
     };
 
     const handleCompleteButtonClick = async () => {
+
         try {
+            // FormData 생성
+            const formData = new FormData();
+            formData.append('username', inputText_1);
+            formData.append('password1', inputText_2);
+            formData.append('password2', inputText_2);
+            formData.append('nickname', 'lny');
+            formData.append('invited_users', null);
+
             // 회원가입 요청 보내기
-            const response = await axios.post('https://port-0-likelion-myrrhthon-back-1igmo82clos9yp4o.sel5.cloudtype.app/', {
-                username: inputText_1,
-                password: inputText_2
-            });
+            const response = await axios.post('https://port-0-likelion-myrrhthon-back-1igmo82clos9yp4o.sel5.cloudtype.app/member/signup/', formData);
 
             // 회원가입 성공 시 처리
+            const token = response.data.token;
+
+            // 토큰을 로컬 스토리지나 쿠키 등에 저장
+            localStorage.setItem('token', token);
+
             alert('성공적으로 회원가입되었습니다!');
             navigate('/login');
         } catch (error) {
             // 회원가입 실패 시 처리
             console.error('회원가입 실패', error);
-            //console.log(response);
+            if (error.response) {
+                // 서버 응답이 있는 경우 응답 내용 출력
+                console.error('응답 데이터:', error.response.data);
+                console.error('상태 코드:', error.response.status);
+            }
             alert('회원가입에 실패했습니다. 다시 시도해주세요.');
         }
+
     };
 
     const handleCompleteButtonClick_check_ok = () => {
