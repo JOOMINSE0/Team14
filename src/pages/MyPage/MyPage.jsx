@@ -37,6 +37,8 @@ const MyPage = () => {
             navigate('/signup');
         } else if (index === 5) {
             navigate('/deleteaccount');
+        } else if (index === 6) {
+            navigate('/seemyfamily');
         }
     };
 
@@ -112,6 +114,24 @@ const MyPage = () => {
                                         <img src={familydiary} alt="이미지" />
                                         <div className="row-sizedbox"></div>
                                         가족끼리 나눠 보는 일기장
+                                    </div>
+                                    <img src={arrow} alt="이미지" />
+
+                                </div>
+                            </button>
+                        </div>
+                        <div className="sizedbox"></div>
+                        <div className="diary-div">
+                            <button
+                                className={`my-page-button ${selected === 0 ? 'selected' : ''}`}
+                                onClick={() => handleButtonClick(6)}
+                            >
+                                <div className="mypage-row">
+                                    <div className="just-row">
+                                        <div className="row-sizedbox"></div>
+                                        <img src={familydiary} alt="이미지" />
+                                        <div className="row-sizedbox"></div>
+                                        초대된 우리 가족 보기
                                     </div>
                                     <img src={arrow} alt="이미지" />
 

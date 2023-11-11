@@ -42,6 +42,7 @@ import MyDiary_ex_3 from "./pages/MyDiary_ex_3/MyDiary_ex_3"
 import MyDiary_ex_4 from "./pages/MyDiary_ex_4/MyDiary_ex_4"
 import MyDiary_ex_5 from "./pages/MyDiary_ex_5/MyDiary_ex_5"
 import MyDiary_ex_6 from "./pages/MyDiary_ex_6/MyDiary_ex_6"
+import SeeMyFamily from "./pages/SeeMyFamily/SeeMyFamily"
 
 export default class AppRoutes extends React.Component {
 
@@ -91,6 +92,7 @@ export default class AppRoutes extends React.Component {
                     <Route path="/mydiary_ex_4" element={<MyDiary_ex_4 />} />
                     <Route path="/mydiary_ex_5" element={<MyDiary_ex_5 />} />
                     <Route path="/mydiary_ex_6" element={<MyDiary_ex_6 />} />
+                    <Route path="/seemyfamily" element={<SeeMyFamily />} />
                 </Routes>
             </Router>
         );
