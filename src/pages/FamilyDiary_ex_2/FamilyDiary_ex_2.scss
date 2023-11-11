@@ -98,3 +98,19 @@
 .sizedbox-row {
     width: 20px;
 }
+
+.nickname {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.make-nickname-start {
+    display: flex;
+    align-items: flex-start; // 수직 방향 중앙 정렬
+    justify-content: flex-start; // 수평 방향 시작 정렬
+    flex-direction: row;
+}
+
+.sizedbox-bottom {
+    height: 42px;
+}

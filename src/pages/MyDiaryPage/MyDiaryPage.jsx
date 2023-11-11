@@ -5,6 +5,8 @@ import './MyDiaryPage.scss';
 import { useNavigate } from 'react-router-dom';
 import HeaderNavigation from "../../component/HeaderNavigation/HeaderNavigation";
 import calender from '../../assets/diary_calander.svg';
+import flower from '../../assets/flower.jpg';
+import icon_profile_4 from '../../assets/icon_profile_4.jpg';
 
 //화면 Main(메인화면) 컴포넌트를 만든다
 const MyDiaryPage = () => {
@@ -63,12 +65,13 @@ const MyDiaryPage = () => {
                         </div>
                         <button className='calender-row' onClick={move_ex_1}>
                             <div className="calender-column">
-                                <div>21</div>
-                                <div>수</div>
+                                <div>12</div>
+                                <div>일</div>
                             </div>
                             <div className='sizedbox-row'></div>
                             <div className='title-start'>
-                                가족들에게 미안했던 하루...
+                                가족들에게 미안했던 하루... 창피했다.
+                                <img src={flower} alt="이미지" className="image" />
                             </div>
 >>>>>>> back/master
                         </button>
@@ -81,8 +84,8 @@ const MyDiaryPage = () => {
                         </div>
                         <button className='calender-row' onClick={move_ex_2}>
                             <div className="calender-column">
-                                <div>20</div>
-                                <div>화</div>
+                                <div>11</div>
+                                <div>토</div>
                             </div>
                             <div className='sizedbox-row'></div>
                             <div className='title-start'>
@@ -98,8 +101,8 @@ const MyDiaryPage = () => {
                         </div>
                         <button className='calender-row' onClick={move_ex_3}>
                             <div className="calender-column">
-                                <div>17</div>
-                                <div>토</div>
+                                <div>10</div>
+                                <div>금</div>
                             </div>
                             <div className='sizedbox-row'></div>
                             <div className='title-start'>
@@ -108,12 +111,13 @@ const MyDiaryPage = () => {
                         </button>
                         <button className='calender-row' onClick={move_ex_4}>
                             <div className="calender-column">
-                                <div>13</div>
-                                <div>화</div>
+                                <div>10</div>
+                                <div>금</div>
                             </div>
                             <div className='sizedbox-row'></div>
                             <div className='title-start'>
-                                며느리는 딸이 될 수 없구나..
+                                며느리는 딸이 될 수 없다.. 씁쓸하다.
+                                <img src={icon_profile_4} alt="이미지" className="image" />
                             </div>
                         </button>
                     </div>

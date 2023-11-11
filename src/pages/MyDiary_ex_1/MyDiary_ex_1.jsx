@@ -3,6 +3,8 @@ import Nav from "../../component/Nav/Nav";
 import Header from "../../component/Header/Header";
 import { useNavigate } from 'react-router-dom';
 import './MyDiary_ex_1.scss';
+import profile from '../../assets/icon_profile.svg';
+import flower from '../../assets/flower.jpg';
 
 //화면 Main(메인화면) 컴포넌트를 만든다
 const MyDiary_ex_1 = () => {
@@ -29,10 +31,17 @@ const MyDiary_ex_1 = () => {
             <div className="content clicked-my-diary-column">
                 <h2>이렇게 일기가 작성되었어요.</h2>
                 <div>
-                    <p>가족들에게 미안했던 하루...</p>
+                    <p>가족들에게 미안했던 하루... 창피했다.</p>
+                    <div className="make-nickname-start">
+                        <div className="make-row">
+                            <img src={profile} alt="이미지" />
+                            <p className="nickname">할머니</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="my-diary-pop">
                     아들이 대소변을 갈아주었다. 남편이 날 씻겨주는데 창피해서 괜히 소리질렀다. 난 언제까지 남의 손길에 의지해야 하는건지... 터널 끝이 보이지 않아 너무 슬프다.
+                    <img src={flower} alt="이미지" className="image-clicked" />
                 </div>
                 <div className="sizedbox"></div>
                 <button className="clicked-my-diary-button" onClick={handleCompleteButtonClick}>
@@ -48,6 +57,7 @@ const MyDiary_ex_1 = () => {
                         삭제하기
                     </button>
                 </div>
+                <div className="sizedbox-bottom"></div>
             </div>
             <Nav />
         </div>

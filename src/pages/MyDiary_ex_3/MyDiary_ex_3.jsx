@@ -3,6 +3,7 @@ import Nav from "../../component/Nav/Nav";
 import Header from "../../component/Header/Header";
 import { useNavigate } from 'react-router-dom';
 import './MyDiary_ex_3.scss';
+import profile from '../../assets/icon_profile.svg';
 
 //화면 Main(메인화면) 컴포넌트를 만든다
 const MyDiary_ex_3 = () => {
@@ -30,6 +31,12 @@ const MyDiary_ex_3 = () => {
                 <h2>이렇게 일기가 작성되었어요.</h2>
                 <div>
                     <p>아들에게는 말 못하지만, 사실 너무 섭섭했다...</p>
+                    <div className="make-nickname-start">
+                        <div className="make-row">
+                            <img src={profile} alt="이미지" />
+                            <p className="nickname">할머니</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="my-diary-pop">
                     아들 부부와 손주들에게 짐이 되는 기분이다. 요양원 비용, 용돈 문제, 유산 문제... 나이가 들고 늙으니 눈치가 보인다. 나 때문에 집안의 불화가 일어나는 건 아닌지...
@@ -48,6 +55,7 @@ const MyDiary_ex_3 = () => {
                         삭제하기
                     </button>
                 </div>
+                <div className="sizedbox-bottom"></div>
             </div>
             <Nav />
         </div>

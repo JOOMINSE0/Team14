@@ -3,6 +3,8 @@ import Nav from "../../component/Nav/Nav";
 import Header from "../../component/Header/Header";
 import { useNavigate } from 'react-router-dom';
 import './MyDiary_ex_4.scss';
+import profile from '../../assets/icon_profile.svg';
+import icon_profile_4 from '../../assets/icon_profile_4.jpg';
 
 //화면 Main(메인화면) 컴포넌트를 만든다
 const MyDiary_ex_4 = () => {
@@ -29,10 +31,17 @@ const MyDiary_ex_4 = () => {
             <div className="content clicked-my-diary-column">
                 <h2>이렇게 일기가 작성되었어요.</h2>
                 <div>
-                    <p>며느리는 딸이 될 수 없구나..</p>
+                    <p>며느리는 딸이 될 수 없다.. 씁쓸하다.</p>
+                    <div className="make-nickname-start">
+                        <div className="make-row">
+                            <img src={profile} alt="이미지" />
+                            <p className="nickname">할머니</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="my-diary-pop">
-                    손주 알굴이 갈 수록 희미해지고, 아들 내외 얼굴이 기억이 점점 안나고... 자주 보고싶고, 얘기도 많이 하고싶은데 며느리는 나를 부담스러워 하는 것 같다. 조금 서글프다...
+                    손주 알굴이 갈 수록 희미해지고, 아들 내외 얼굴이 기억이 점점 안나고... 자주 보고싶고, 얘기도 많이 하고싶은데 며느리는 나를 부담스러워 하는 것 같다. 서글프다...
+                    <img src={icon_profile_4} alt="이미지" className="image-clicked" />
                 </div>
                 <div className="sizedbox"></div>
                 <button className="clicked-my-diary-button" onClick={handleCompleteButtonClick}>
@@ -48,6 +57,7 @@ const MyDiary_ex_4 = () => {
                         삭제하기
                     </button>
                 </div>
+                <div className="sizedbox-bottom"></div>
             </div>
             <Nav />
         </div>
