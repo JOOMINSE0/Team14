@@ -33,11 +33,7 @@ const Main = () => {
     };
 
     return (
-<<<<<<< HEAD
         <div className="iphone-frame" style={{overflowY: 'scroll'}}>
-=======
-        <div className="iphone-frame" style={{ overflowY: 'auto' }}>
->>>>>>> back/master
             <Header />
 
             <div className="content main-column">
