@@ -3,6 +3,7 @@ import Nav from "../../component/Nav/Nav";
 import Header from "../../component/Header/Header";
 import { useNavigate } from 'react-router-dom';
 import './FamilyDiary_ex_4.scss';
+import profile from '../../assets/icon_profile.svg';
 
 //화면 Main(메인화면) 컴포넌트를 만든다
 const FamilyDiary_ex_4 = () => {
@@ -29,6 +30,12 @@ const FamilyDiary_ex_4 = () => {
             <div className="content clicked-family-diary-column">
                 <h2>이렇게 일기가 작성되었어요.</h2>
                 <div>
+                    <div className="make-nickname-start">
+                        <div className="make-row">
+                            <img src={profile} alt="이미지" />
+                            <p className="nickname">어머니 아들</p>
+                        </div>
+                    </div>
                     <p>우리 가족 모두 힘을 냅시다. 할머니는 다시 건강해지실 거야...</p>
                 </div>
                 <div className="sizedbox"></div>
@@ -40,15 +47,7 @@ const FamilyDiary_ex_4 = () => {
                     우리 가족 일기장 목록으로 돌아가기
                 </button>
                 <div className="sizedbox"></div>
-                <div className="make-row">
-                    <button className="modify" onClick={clickedmodify}>
-                        수정하기
-                    </button>
-                    <div className="sizedbox-row"></div>
-                    <button className="modify" onClick={clickeddelete}>
-                        삭제하기
-                    </button>
-                </div>
+
             </div>
             <Nav />
         </div>

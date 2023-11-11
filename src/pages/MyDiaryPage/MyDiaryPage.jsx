@@ -5,6 +5,8 @@ import './MyDiaryPage.scss';
 import { useNavigate } from 'react-router-dom';
 import HeaderNavigation from "../../component/HeaderNavigation/HeaderNavigation";
 import calender from '../../assets/diary_calander.svg';
+import flower from '../../assets/flower.jpg';
+import icon_profile_4 from '../../assets/icon_profile_4.jpg';
 
 //화면 Main(메인화면) 컴포넌트를 만든다
 const MyDiaryPage = () => {
@@ -50,7 +52,8 @@ const MyDiaryPage = () => {
                             </div>
                             <div className='sizedbox-row'></div>
                             <div className='title-start'>
-                                가족들에게 미안했던 하루...
+                                가족들에게 미안했던 하루... 창피했다.
+                                <img src={flower} alt="이미지" className="image" />
                             </div>
                         </button>
                     </div>
@@ -94,7 +97,8 @@ const MyDiaryPage = () => {
                             </div>
                             <div className='sizedbox-row'></div>
                             <div className='title-start'>
-                                며느리는 딸이 될 수 없구나..
+                                며느리는 딸이 될 수 없다.. 씁쓸하다.
+                                <img src={icon_profile_4} alt="이미지" className="image" />
                             </div>
                         </button>
                     </div>

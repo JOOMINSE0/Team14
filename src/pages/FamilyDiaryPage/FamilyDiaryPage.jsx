@@ -6,6 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import HeaderNavigation from "../../component/HeaderNavigation/HeaderNavigation";
 import calender from '../../assets/diary_calander.svg';
 import picture from '../../assets/icon_familypicture.jpg';
+import picture_2 from '../../assets/icon_familypicture_2.jpg';
+import picture_3 from '../../assets/icon_profile_3.jpg';
 
 const FamiliDiaryPage = () => {
 
@@ -61,7 +63,7 @@ const FamiliDiaryPage = () => {
                             </div>
                             <div className='sizedbox-row'></div>
                             <div className='title-start'>
-                                깜빡한 게 많은 하루
+                                오늘 할머니가 자꾸 깜빡해서 미안해~^^
                             </div>
                         </button>
                     </div>
@@ -79,6 +81,7 @@ const FamiliDiaryPage = () => {
                             <div className='sizedbox-row'></div>
                             <div className='title-start'>
                                 치매에 걸렸어도 우리 딸 여전히 기억하고 사랑한다
+                                <img src={picture_3} alt="이미지" className="image" />
                             </div>
                         </button>
                     </div>
@@ -126,6 +129,7 @@ const FamiliDiaryPage = () => {
                             <div className='sizedbox-row'></div>
                             <div className='title-start'>
                                 어머님 기억이 안날 땐 여길 보고 기억하세요.
+                                <img src={picture_2} alt="이미지" className="image" />
                             </div>
                         </button>
                         <button className='calender-row' onClick={move_ex_6}>
