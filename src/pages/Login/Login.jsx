@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import Nav from "../../component/Nav/Nav";
 import Header from "../../component/Header/Header";
+import { useState } from 'react';
 import './Login.scss';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
+//화면 Main(메인화면) 컴포넌트를 만든다
 const Login = () => {
-    const [inputText_1, setInputText_1] = useState('');
-    const [inputText_2, setInputText_2] = useState('');
-    const navigate = useNavigate();
+    const [inputText_1, setInputText_1] = useState(''); // 초기값 설정(이름)
+    const [inputText_2, setInputText_2] = useState(''); // 초기값 설정(날짜. 월)
+    const navigate = useNavigate(); // useNavigate 훅을 사용
 
     const handleInputChange_1 = (e) => {
         setInputText_1(e.target.value);
@@ -18,36 +20,24 @@ const Login = () => {
         setInputText_2(e.target.value);
     };
 
-    const handleCompleteButtonClick = async () => {
-        try {
-            // 로그인 요청 보내기
-            const response = await axios.post('https://port-0-likelion-myrrhthon-back-1igmo82clos9yp4o.sel5.cloudtype.app/', {
-                username: inputText_1,
-                password: inputText_2
-            });
-
-            // 서버에서 받은 JWT 토큰을 로컬 스토리지에 저장
-            const token = response.data.token;
-            localStorage.setItem('token', token);
-
-            alert('성공적으로 로그인되었습니다!');
-            navigate('/main');
-        } catch (error) {
-            // 로그인 실패 시 처리
-            console.error('로그인 실패', error);
-            alert('로그인에 실패했습니다. 다시 시도해주세요.');
-        }
+    const handleCompleteButtonClick = () => {
+        alert('성공적으로 로그인되었습니다!');
+        // 입력 완료 버튼 클릭 시 main 화면으로 이동
+        navigate('/main');
     };
 
     const handleCompleteButtonClick_signup = () => {
+        // 입력 완료 버튼 클릭 시 main 화면으로 이동
         navigate('/signup');
     };
+
 
     return (
         <div className="iphone-frame">
             <Header />
             <br/>
             <div className="content login-column">
+
                 <div>
                     <p>아이디를 입력해주세요.</p>
                     <input
@@ -61,7 +51,7 @@ const Login = () => {
                     <p>비밀번호를 입력해주세요.</p>
                     <input
                         className="login-input"
-                        type="password"
+                        type="text"
                         value={inputText_2}
                         onChange={handleInputChange_2}
                     />
