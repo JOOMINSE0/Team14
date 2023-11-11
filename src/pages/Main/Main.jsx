@@ -33,7 +33,7 @@ const Main = () => {
     };
 
     return (
-        <div className="iphone-frame" style={{overflowY: 'auto'}}>
+        <div className="iphone-frame" style={{ overflowY: 'auto' }}>
             <Header />
 
             <div className="content main-column">
@@ -55,22 +55,22 @@ const Main = () => {
 
                     <div className="main-row">
                         <h2>치매와 함께한지</h2>
-                        <h2>377</h2>
+                        <h2>14</h2>
                         <h2>일 째</h2>
                     </div>
                 </div>
                 <button className="chimae-button" onClick={handleCompleteButtonClick_whatischimae}>
                     치매란 어떤 병인가요?
                 </button>
-                <br/>
+                <br />
                 <button className="chimae-button" onClick={handleCompleteButtonClick_allthing}>
                     치매 단계별 증상/준비물 모두 보기
                 </button>
-                <br/>
+                <br />
                 <button className="chimae-button" onClick={handleCompleteButtonClick_forfamily}>
                     치매 환자 가족을 위한 가이드 보기
                 </button>
-                <br/>
+                <br />
                 <div className="div-discript-div">
                     <div className="main-column">
                         <div className="discript-div">
